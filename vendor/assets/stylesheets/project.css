@@ -1,0 +1,308 @@
+
+#map {
+    padding-top: 300px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+}
+
+img[alt="organization_logo"] {
+    height: 50px;
+    width: 100px;
+}
+
+.glyphicon-user {
+    font-size: 200%;
+}
+
+#users_area {
+    text-align: center;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+#users_area_text {
+    display: block;
+}
+
+.navbar-inverse {
+    background-color: #FF8C0f;
+    border: 3px solid #0d0d0d;
+}
+
+#myNavbar ul li {
+    width: 20%;
+    text-align: center;
+    border-right: 2px solid #000000;
+}
+
+#myNavbar ul li:last-child {
+    border-right: 0;
+}
+
+#myNavbar ul {
+    width: 100%;
+    height: 100%;
+}
+
+#myNavbar ul li a, .navbar-brand {
+    color: #000000;
+    font-size: medium;
+}
+
+.navbar-inverse .navbar-brand {
+    font-size: xx-large;
+    color: #000000;
+}
+
+#slogan {
+    font-size: xx-large;
+}
+
+#slogan, .glyphicon-user, .fa, .list-inline, #users_area_text a, #copyright, a[href="recover_password"] {
+    color: #ffa33f;
+}
+
+#users_area_text a:hover {
+    color: #FF8C0f;
+}
+
+#copyright {
+    font-size: x-large;
+}
+
+.navbar-collapse {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 13px 0;
+}
+
+#edit_profile, #logout {
+    display: none;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: #e07500;
+    color: #383838;
+}
+
+#nav {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+#users_dropdown li a:hover {
+    background-color: #e07500;
+}
+
+#front {
+    height: 35%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: url("front/fitness_center_2.jpg") no-repeat center;
+    border: 2px solid #080808;
+}
+
+#front .row {
+    padding-bottom: 26%;
+}
+
+#about_us {
+    font-size: x-large;
+}
+
+.list-inline {
+    font-size: xx-large;
+}
+
+#login_form, #sign_up_form {
+    border: 2px solid #aaaaaa;
+    border-radius: 2%;
+    color: #383838;
+    background-color: #f1f1f1;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#login_form {
+    margin-bottom: 15px;
+}
+
+#login_form p, #sign_up_form p {
+    font-size: large;
+}
+
+#login_form label, #sign_up_form label {
+    text-align: justify;
+}
+
+#myNavbar ul[class="dropdown-menu"] li {
+    border-right: 0;
+    width: 100%;
+}
+
+#myNavbar ul[class="dropdown-menu"] {
+    height: auto;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    color: #FFF;
+    background-color: #FF8C0f;
+}
+
+.dropdown-menu {
+    background-color: #FF8C0f;
+}
+
+.btn-default {
+    background-color: #ffa33f;
+    border: 1px solid #080808;
+}
+
+.btn-default:hover {
+    background-color: #FF8C0f;
+}
+
+#myNavbar li:hover, .dropdown-menu li:hover {
+    background-color: #e07500;
+}
+
+#info h1 ~ p {
+    font-size: x-large;
+}
+
+#info h1 {
+    text-align: justify;
+    font-weight: bold;
+}
+
+#description, #map, #rating {
+    border-radius: 3px;
+    border: 3px solid #ffa33f;
+    font-size: large;
+}
+
+#description p, #description h4 {
+    margin: 8px;
+}
+
+#description p, #rating ul li p {
+    font-size: x-large;
+}
+
+.glyphicon-chevron-right, .glyphicon-chevron-left {
+    color: #FF8C0f;
+    font-size: 300% !important;
+}
+
+.item-active img {
+    height: 500px;
+}
+
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    height: 500px;
+    width: 100%;
+}
+
+#myCarousel {
+    margin: 10px;
+    margin-top: 15px;
+}
+
+.address p, .schedules li {
+    font-size: x-large;
+    text-align: justify;
+}
+
+#rating ul {
+    list-style: none;
+}
+
+#rating {
+    margin-top: 15px;
+}
+
+#rating p {
+    text-align: justify;
+    font-size: large;
+}
+
+#rating li {
+    border-radius: 3px;
+    border: 3px solid #f0ad4e;
+    padding: 10px;
+}
+
+#rating ul {
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+#users_area li {
+    list-style: none;
+}
+
+.alert {
+    display: none;
+}
+
+#rating ul li {
+    margin-top: 10px;
+}
+
+#slogan:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    #myNavbar ul li {
+        border-right: 0;
+        text-align: left;
+        width: auto;
+        padding-left: 5%;
+    }
+
+    .list-inline li {
+        display: block;
+    }
+
+    #rate {
+        font-size: medium;
+    }
+
+    #info h1 ~ p {
+        font-size: medium;
+    }
+
+    #info h1 {
+        font-size: x-large;
+    }
+
+    .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+        height: 300px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .address p, .schedules li {
+        font-size: medium;
+    }
+}
+
+@media (max-width: 500px) {
+    #slogan {
+        margin-top: 15px;
+        font-size: large;
+    }
+
+}

@@ -1,0 +1,9 @@
+<script>
+  $(document).ready(function () {
+    registUserAreaEvents();
+
+    if (localStorage.getItem("login")) {
+      changeUserContext();
+    }
+  });
+</script>
