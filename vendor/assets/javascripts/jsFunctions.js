@@ -199,7 +199,7 @@ function registUsersEvents() {
 }
 
 function registUserAreaEvents() {
-    registLoginModalEvents();
+    //registLoginModalEvents();
     $("#signin").on("click", function () {
         $("#loginModal").modal("show");
     });
