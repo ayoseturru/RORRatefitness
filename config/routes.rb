@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-
+  root "welcome#index"
   get ':controller(/:action(/:id(.:format)))'
   
   # The priority is based upon order of creation: first created -> highest priority.
