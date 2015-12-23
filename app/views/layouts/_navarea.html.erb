@@ -6,12 +6,17 @@
       <a href="users.html" class="dropdown-toggle" data-toggle="dropdown"><span
       class="glyphicon glyphicon-user"></span></a>
       <ul id="users_dropdown" class="dropdown-menu">
-        <li><a id="signin" href='#'>Iniciar sesión</a></li>
-        <li><a id="edit_profile" href='#'>Editar Perfil</a></li>
-        <li><a id="logout" href='#'>Salir</a></li>
+        <% if !session[:username] %>
+            <li><a id="signin" href='#'>Iniciar sesión</a></li>
+            <li><a id="signin" href='/users/new'>Registrarse</a></li>
+        <% end %>
+        <% if session[:username] %>
+            <li><a id="edit_profile" href='#'>Editar Perfil</a></li>
+            <li><a id="logout" href='/logout'>Salir</a></li>
+        <% end %>
       </ul>
     </div>
-    <p id="users_area_text"><a href="users.html">usuarios</a></p>
+    <p id="users_area_text"><a href="users.html"><%= session[:username] or "hola" %></a></p>
   </div>
 </div>
 <div class="row">
@@ -44,4 +49,37 @@
   </nav>
 </div>
 </div>
+</div>
+
+<div class="modal fade" id="loginModal" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <a type="button" class="close" data-dismiss="modal">&times;</a>
+        <h4 class="modal-title">Inicia sesión o regístrate gratis para escribir una reseña</h4>
+      </div>
+      <div class="modal-body">
+        <%= form_tag session_path do %>
+            <div class="field form-group">
+              <%= label_tag :email %></br>
+              <%= text_field_tag :email, nil, class: 'form-control', required: true %>
+            </div>
+            <div class="field form-group">
+              <%= label_tag :password %></br>
+              <%= password_field_tag :password, nil, class: 'form-control', required: true %>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox"> Recordar</label>
+            </div>
+            <p><a href="recover_password">Olvidé mi cotnraseña</a></p>
+            <div class="alert alert-danger">
+            </div>
+            <div class="actions">
+              <%= submit_tag 'Login', class: 'btn btn-default' %>
+            </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
 </div>

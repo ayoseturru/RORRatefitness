@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   root "welcome#index"
-
+  resource :users
   resource :session, only: [:new, :create, :destroy]
-
+  get '/logout' => "sessions#destroy", as: "logout"
   get ':controller(/:action(/:id(.:format)))'
 
 
