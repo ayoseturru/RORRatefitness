@@ -263,6 +263,16 @@ img[alt="organization_logo"] {
     text-decoration: none;
 }
 
+#users_area .dropdown-menu {
+    min-width: 0px;
+    width: 120px;
+}
+
+#users_dropdown a {
+    padding: 0px;
+    text-align: center;
+}
+
 @media (max-width: 767px) {
     #myNavbar ul li {
         border-right: 0;
@@ -297,12 +307,33 @@ img[alt="organization_logo"] {
     .address p, .schedules li {
         font-size: medium;
     }
+
+    #slogan {
+        font-size: x-large;
+    }
 }
 
 @media (max-width: 500px) {
     #slogan {
         margin-top: 15px;
-        font-size: large;
+        font-size: medium;
     }
 
+    #users_area .dropdown-menu {
+        width: 100px;
+    }
+
+    #users_dropdown a {
+        font-size: small;
+    }
+}
+
+@media (max-width: 1300px) {
+    .address p, .schedules li {
+        font-size: medium;
+    }
+
+    img[alt="organization_logo"] {
+        width: 80px;
+    }
 }
