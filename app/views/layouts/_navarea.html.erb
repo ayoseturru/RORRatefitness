@@ -62,8 +62,8 @@
       <div class="modal-body">
         <%= form_tag session_path do %>
             <div class="field form-group">
-              <%= label_tag :email %></br>
-              <%= text_field_tag :email, nil, class: 'form-control', required: true %>
+              <%= label_tag :username, 'Nombre de usuario' %></br>
+              <%= text_field_tag :username, nil, class: 'form-control', required: true %>
             </div>
             <div class="field form-group">
               <%= label_tag :password %></br>
@@ -73,8 +73,12 @@
               <label><input type="checkbox"> Recordar</label>
             </div>
             <p><a href="recover_password">Olvidé mi cotnraseña</a></p>
-            <div class="alert alert-danger">
-            </div>
+            <% if flash[:login_error] %>
+                <div class="alert alert-danger">
+                  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                  <%= pflash[:login_error] %>
+                </div>
+            <% end %>
             <div class="actions">
               <%= submit_tag 'Login', class: 'btn btn-default' %>
             </div>
@@ -83,3 +87,13 @@
     </div>
   </div>
 </div>
+
+<% if flash[:login_error] %>
+    <script>
+
+      $(document).ready(function () {
+        $("#loginModal").modal("show");
+      });
+
+    </script>
+<% end %>

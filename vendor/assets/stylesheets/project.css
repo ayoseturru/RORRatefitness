@@ -245,8 +245,8 @@ img[alt="organization_logo"] {
     list-style: none;
 }
 
-.alert {
-    display: none;
+#sign_up_form {
+    margin-bottom: 15px;
 }
 
 #rating ul li {

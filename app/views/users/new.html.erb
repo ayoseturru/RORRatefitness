@@ -1,16 +1,19 @@
-<div id="sign_up_form" class="col-xs-8 col-xs-offset-2 col-sm-5 col-lg-3 col-sm-offset-2">
+<% if @user.errors.any? %>
+    <div class="alert alert-danger col-xs-8 col-xs-offset-2 hidden-sm col-md-3 hidden-md hidden-lg">
+      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+      <h4>No hemos podido crear su cuenta, es necesario que corrija los siguientes errores:</h4>
+      <ul id="new_user_errors">
+        <% @user.errors.messages.values.each do |msg| %>
+            <% msg.each do |m| %>
+                <li><%= m %></li>
+            <% end %>
+        <% end %>
+      </ul>
+    </div>
+<% end %>
+
+<div id="sign_up_form" class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4 col-lg-3 col-sm-offset-2">
   <%= form_for(@user) do |f| %>
-      <% if @user.errors.any? %>
-          <div id="error_explanation">
-            <h2> <%= pluralize(@user.errors.count, "error") %>
-              prohibited this user from being saved: </h2>
-            <ul>
-              <% @user.errors.full_messages.each do |msg| %>
-                  <li><%= msg %></li>
-              <% end %>
-            </ul>
-          </div>
-      <% end %>
 
       <div class="field form-group">
         <%= f.label :username, 'Nombre de usuario' %></br>
@@ -44,3 +47,17 @@
 
   <% end %>
 </div>
+
+<% if @user.errors.any? %>
+    <div class="alert alert-danger hidden-xs col-xs-8 col-xs-offset-2 col-sm-3 col-lg-offset-2 col-lg-4">
+      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+      <h4>No hemos podido crear su cuenta, es necesario que corrija los siguientes errores:</h4>
+      <ul id="new_user_errors">
+        <% @user.errors.messages.values.each do |msg| %>
+            <% msg.each do |m| %>
+                <li><%= m %></li>
+            <% end %>
+        <% end %>
+      </ul>
+    </div>
+<% end %>
