@@ -11,7 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151223193553) do
+ActiveRecord::Schema.define(version: 20151224191700) do
+
+  create_table "centers", force: :cascade do |t|
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.string   "address"
+    t.string   "images"
+    t.string   "schedule"
+    t.string   "geolocation"
+    t.string   "phone"
+    t.string   "second_phone"
+    t.string   "email"
+    t.string   "name"
+    t.string   "description"
+    t.string   "latitude"
+    t.string   "longitude"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "username"

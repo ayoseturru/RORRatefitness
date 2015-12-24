@@ -5,7 +5,8 @@ class SessionsController < ApplicationController
       session[:username] = user.username
       redirect_to root_url
     else
-      redirect_to root_url, flash: {login_error: "Lo sentimos. Las crecendiales proporcionadas no son corectas..."}
+      flash[:login_error] = "Lo sentimos. Las crecendiales proporcionadas no son corectas..."
+      redirect_to root_url
     end
   end
 

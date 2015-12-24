@@ -236,6 +236,13 @@ img[alt="organization_logo"] {
     padding: 10px;
 }
 
+#centers_result ul  {
+    list-style: none;
+    padding-left: 15px;
+    border: 3px solid #f0ad4e;
+    border-radius: 6px;
+}
+
 #rating ul {
     margin-top: 10px;
     padding-left: 0;

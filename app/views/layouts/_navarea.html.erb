@@ -16,7 +16,7 @@
         <% end %>
       </ul>
     </div>
-    <p id="users_area_text"><a href="users.html"><%= session[:username] or "hola" %></a></p>
+    <p id="users_area_text"><a href="users.html"><%= session[:username] or "Usuarios" %></a></p>
   </div>
 </div>
 <div class="row">
@@ -76,7 +76,7 @@
             <% if flash[:login_error] %>
                 <div class="alert alert-danger">
                   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                  <%= pflash[:login_error] %>
+                  <%= flash[:login_error] %>
                 </div>
             <% end %>
             <div class="actions">

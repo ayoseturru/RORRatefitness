@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
   root "welcome#index"
+  resource :centers
   resource :users
   resource :session, only: [:new, :create, :destroy]
+
   get '/logout' => "sessions#destroy", as: "logout"
-  get ':controller(/:action(/:id(.:format)))'
+  # get ':controller(/:action(/:id(.:format)))'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
