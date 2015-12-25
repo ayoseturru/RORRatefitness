@@ -241,7 +241,7 @@ img[alt="organization_logo"] {
     padding: 10px;
 }
 
-#centers_result ul  {
+#centers_result ul {
     list-style: none;
     padding-left: 5px;
     border: 3px solid #ffa33f;
@@ -254,6 +254,7 @@ img[alt="organization_logo"] {
     padding-left: 8px;
     border-radius: 5px;
 }
+
 #rating ul {
     margin-top: 10px;
     padding-left: 0;
@@ -332,7 +333,7 @@ img[alt="organization_logo"] {
 
 @media (max-width: 992px) {
     .address p, .schedules li {
-        font-size: medium;
+        font-size: medium !important;
     }
 
     #slogan {
@@ -357,7 +358,11 @@ img[alt="organization_logo"] {
 
 @media (max-width: 1300px) {
     .address p, .schedules li {
-        font-size: medium;
+        font-size: medium !important;
+    }
+
+    #rating p {
+        font-size: medium!important;
     }
 
     img[alt="organization_logo"] {

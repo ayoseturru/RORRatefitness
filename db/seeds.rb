@@ -14,4 +14,4 @@ Center.create name: "Centro Deportivo Las rehoyas", address: "parque de las reho
 Center.create name: "Centro Deportivo Pedro Hidalgo", address: "Carretera de pedro hidalgo", phone: "928202123",
               description: "Estupendísimo", main_image: "hidalgo_1.jpg",
               schedule: "Lunes a viernes: 7:30-22:30&Sábado: 7:30-18:00&Domingo: cerrado",
-              latitude: "28.1084143", longitude: "-15.4294968", email: "info@hidalgo.com", rate: 3.2
+              latitude: "28.0619663", longitude: "-15.423471", email: "info@hidalgo.com", rate: 3.2, images: "hidalgo_2.jpg"

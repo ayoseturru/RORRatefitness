@@ -1,5 +1,9 @@
 class Center < ActiveRecord::Base
   def get_images
-    return images.split("&")
+    if images
+      return images.split("&")
+    else
+      return []
+    end
   end
 end
