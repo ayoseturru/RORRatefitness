@@ -2,7 +2,18 @@ class CentersController < ApplicationController
   before_action :set_center, only: [:show]
 
   def index
-    @centers = Center.all
+    @centers = Center.filter(params[:filter])
+    if @centers.present?
+      respond_to do |format|
+        format.html
+        format.js
+      end
+    else
+      respond_to do |format|
+        format.html
+        format.js { render "fail_search.js.erb" }
+      end
+    end
   end
 
   def show
@@ -13,3 +24,18 @@ class CentersController < ApplicationController
     @center = Center.find_by_id(params[:id])
   end
 end
+
+# def index
+#   @articles = Article.con_titulo(params[:buscar])
+#   if @articles.present?
+#     respond_to do |format|
+#       format.html
+#       format.js
+#     end
+#   else
+#     respond_to do |format|
+#       format.html
+#       format.js { render "fallo_articulos.js.erb" }
+#     end
+#   end
+# end

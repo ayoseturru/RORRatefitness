@@ -3,6 +3,27 @@
     padding-top: 300px;
 }
 
+#ajax_search form {
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+#ajax_search form input {
+    border-color: #f0ad4e;
+}
+
+#ajax_search form p {
+    color: #FF8C0f;
+}
+
+#fail_search {
+    color: #FF8C0f;
+    font-size: large;
+    padding-bottom: 150px;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #ffffff;
@@ -299,6 +320,10 @@ img[alt="organization_logo"] {
 #users_dropdown a {
     padding: 0px;
     text-align: center;
+}
+
+#rating-container {
+    display: none;
 }
 
 @media (max-width: 767px) {

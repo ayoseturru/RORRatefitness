@@ -107,9 +107,9 @@
       <div class="schedules hidden-xs">
         <h3>Horarios <i class="fa fa-clock-o"></i></h3>
         <ul>
-          <li>Lunes a Viernes: 8-30: 20:30</li>
-          <li>Sábados: 10:00-14:00</li>
-          <li>Domingos: cerrado</li>
+          <li>Lunes a Viernes: <%= @center.schedule.split("&")[0] %></li>
+          <li>Sábados: <%= @center.schedule.split("&")[1] %></li>
+          <li>Domingos: <%= @center.schedule.split("&")[2] %></li>
         </ul>
       </div>
     </div>
