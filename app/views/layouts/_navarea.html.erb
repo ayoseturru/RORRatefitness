@@ -1,6 +1,7 @@
 <div class="row">
-  <a id="slogan" class="col-xs-7 col-sm-10 col-lg-10">Believe in Fitness</a>
-
+  <%= link_to root_path, id: "slogan", class: "col-xs-7 col-sm-10 col-lg-10" do %>
+      Believe in Fitness
+  <% end %>
   <div id="users_area" class="col-sm-2 col-xs-4 col-lg-1">
     <div class="dropdown">
       <a href="users.html" class="dropdown-toggle" data-toggle="dropdown"><span
@@ -20,7 +21,9 @@
   </div>
 </div>
 <div class="row">
-  <%= image_tag "logo.png", alt: "organization_logo", class: "pull-left hidden-xs hidden-sm col-md-1 img-rounded" %>
+  <%= link_to root_path do %>
+      <%= image_tag "logo.png", alt: "organization_logo", class: "pull-left hidden-xs hidden-sm col-md-1 img-rounded" %>
+  <% end %>
   <nav id="nav" class="navbar navbar-inverse col-xs-12 col-sm-12 col-md-11 col-lg-11">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">

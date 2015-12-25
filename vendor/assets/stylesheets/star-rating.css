@@ -190,7 +190,7 @@
     }
 }
 
-#centers_result .glyphicon-minus-sign {
+#centers_result .glyphicon-minus-sign, #info .glyphicon-minus-sign {
     display: none;
 }
 

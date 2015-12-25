@@ -6,7 +6,7 @@
              data-min="0" data-max="10" data-step="0.5" data-disabled="true"
              data-size="xs">
       <div class="row">
-        <%= image_tag center.main_image, alt: "Center Image", class: "col-xs-2 center_main_image img-rounded" %>
+        <%= image_tag "/center_images/#{center.main_image}", alt: "Center Image", class: "col-xs-2 center_main_image img-rounded" %>
         <p class="col-xs-8"><%= center.description %></p>
       </div>
       <p><i class="fa fa-2x fa-map-marker"></i><strong> Direccion:</strong> <%= center.address %></p>
