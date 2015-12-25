@@ -7,15 +7,11 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 User.create email: "test@test.com", username: "test", name: "test", password: "testtest", password_confirmation: "testtest"
-Center.create name: "Centro Deportivo las rehoyas", address: "parque de las rehoyas", phone: "928202122",
-              description: "Estupendísimo",
+Center.create name: "Centro Deportivo Las rehoyas", address: "parque de las rehoyas", phone: "928202122",
+              description: "Estupendísimo", main_image: "/center_images/rehoyas_1.jpg",
               schedule: "Lunes a viernes: 7:30-22:30&Sábado: 7:30-18:00&Domingo: cerrado",
-              latitude: "28.1084143", longitude: "-15.4294968", email: "info@lasrehoyas.com"
-Center.create name: "Centro Deportivo Tamaraceite", address: "parque de las rehoyas", phone: "928202122",
-              description: "Estupendísimo",
+              latitude: "28.1084143", longitude: "-15.4294968", email: "info@lasrehoyas.com", rate: 4.5
+Center.create name: "Centro Deportivo Pedro Hidalgo", address: "Carretera de pedro hidalgo", phone: "928202123",
+              description: "Estupendísimo", main_image: "/center_images/hidalgo_1.jpg",
               schedule: "Lunes a viernes: 7:30-22:30&Sábado: 7:30-18:00&Domingo: cerrado",
-              latitude: "28.1084143", longitude: "-15.4294968", email: "info@lasrehoyas.com"
-Center.create name: "Centro Deportivo Pedro Hidalgo", address: "parque de las rehoyas", phone: "928202122",
-              description: "Estupendísimo",
-              schedule: "Lunes a viernes: 7:30-22:30&Sábado: 7:30-18:00&Domingo: cerrado",
-              latitude: "28.1084143", longitude: "-15.4294968", email: "info@lasrehoyas.com"
+              latitude: "28.1084143", longitude: "-15.4294968", email: "info@hidalgo.com", rate: 3.2

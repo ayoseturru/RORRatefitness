@@ -217,6 +217,11 @@ img[alt="organization_logo"] {
     text-align: justify;
 }
 
+#centers_result h4 a {
+    text-transform: capitalize;
+    color: #ffa33f;
+}
+
 #rating ul {
     list-style: none;
 }
@@ -238,11 +243,17 @@ img[alt="organization_logo"] {
 
 #centers_result ul  {
     list-style: none;
-    padding-left: 15px;
-    border: 3px solid #f0ad4e;
+    padding-left: 5px;
+    border: 3px solid #ffa33f;
     border-radius: 6px;
 }
 
+#centers_result ul li {
+    border: 3px solid #f0ad4e;
+    margin: 12px;
+    padding-left: 8px;
+    border-radius: 5px;
+}
 #rating ul {
     margin-top: 10px;
     padding-left: 0;
@@ -254,6 +265,21 @@ img[alt="organization_logo"] {
 
 #sign_up_form {
     margin-bottom: 15px;
+}
+
+.center_main_image {
+    height: 100px;
+    width: 160px;
+    border-radius: 15px !important;
+    margin-bottom: 5px;
+}
+
+#results_title {
+    margin-top: 5px;
+}
+
+#centers_result p {
+    margin-bottom: 2px;
 }
 
 #rating ul li {

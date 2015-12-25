@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root "welcome#index"
-  resource :centers
-  resource :users
+  resources :centers
+  resources :users
   resource :session, only: [:new, :create, :destroy]
 
   get '/logout' => "sessions#destroy", as: "logout"

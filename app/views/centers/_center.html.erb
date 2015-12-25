@@ -1,8 +1,15 @@
 <li>
   <%= div_for center do %>
-      <h4>
-        <p><%= link_to center.name, center %> </p>
-        <p><strong>Direccion:</strong> <%= center.address %>, <strong>Telefono</strong>: <%= center.phone %></p>
-      </h4>
+      <h4><%= link_to center.name, center %></h4>
+      <input class="only-star rating form-control hide" data-stars="5"
+             value='<%= center.rate %>'
+             data-min="0" data-max="10" data-step="0.5" data-disabled="true"
+             data-size="xs">
+      <div class="row">
+        <%= image_tag center.main_image, alt: "Center Image", class: "col-xs-2 center_main_image img-rounded" %>
+        <p class="col-xs-8"><%= center.description %></p>
+      </div>
+      <p><i class="fa fa-2x fa-map-marker"></i><strong> Direccion:</strong> <%= center.address %></p>
+      <p><i class="fa fa-2x fa-phone"></i> <strong> Teléfono</strong>: <%= center.phone %></p>
   <% end %>
 </li>
