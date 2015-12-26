@@ -6,6 +6,13 @@
       <h4>
         <%= review.title %>
       </h4>
+      <p class="stars-area">
+        Rate:
+        <% for i in 1..review.rate.round do %>
+            <i class="fa fa-star"></i>
+        <% end %>
+        <%= review.rate %>
+      </p>
       <p>
         <%= review.comment %>
         <br><br>
