@@ -1,0 +1,16 @@
+<li>
+  <%= div_for advert do %>
+      <h3>
+        <%= advert.user.username %>
+      </h3>
+      <h4>
+        <%= advert.title %>
+      </h4>
+      <p>
+        <%= advert.description %>
+        <br><br>
+      </p>
+  <% end %>
+  <h5><%= advert.date %></h5>
+  <%= link_to "Eliminar", advert, data: {confirm: '¿Realmente quieres borrar este anuncio?'}, method: :delete, remote: true %>
+</li>

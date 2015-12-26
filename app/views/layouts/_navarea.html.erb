@@ -12,7 +12,7 @@
             <li><a id="signin" href='/users/new'>Registrarse</a></li>
         <% end %>
         <% if session[:username] %>
-            <li><a id="edit_profile" href='#'>Editar Perfil</a></li>
+            <li><%= link_to "Editar perfil", edit_user_path(current_user) %></li>
             <li><a id="logout" href='/logout'>Salir</a></li>
         <% end %>
       </ul>

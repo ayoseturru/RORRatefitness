@@ -17,3 +17,5 @@ Center.create name: "Centro Deportivo Pedro Hidalgo", address: "Carretera de ped
               description: "Estupendísimo", main_image: "hidalgo_1.jpg",
               monday_friday: "7:30-22:30", saturday: "7:30-18:00", sunday: "cerrado",
               latitude: "28.0619663", longitude: "-15.423471", email: "info@hidalgo.com", rate: 3.2, images: "hidalgo_2.jpg"
+
+Advert.create(title: "mi anuncio", description: "quedada parque romano", user_id: 1)

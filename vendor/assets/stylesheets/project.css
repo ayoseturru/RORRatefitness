@@ -220,7 +220,7 @@ img[alt="organization_logo"] {
     font-weight: bold;
 }
 
-#description, #map, #rating {
+#description, #map, #rating, #adverts {
     border-radius: 3px;
     border: 3px solid #ffa33f;
     font-size: large;
@@ -230,7 +230,7 @@ img[alt="organization_logo"] {
     margin: 8px;
 }
 
-#description p, #rating ul li p {
+#description p, #rating ul li p, #adverts ul li p {
     font-size: x-large;
 }
 
@@ -262,7 +262,7 @@ img[alt="organization_logo"] {
     color: #ffa33f;
 }
 
-#rating ul {
+#rating ul, #adverts ul {
     list-style: none;
 }
 
@@ -270,15 +270,23 @@ img[alt="organization_logo"] {
     margin-top: 15px;
 }
 
-#rating p {
+#adverts {
+    margin-left: 10px;
+}
+
+#rating p, #adverts p {
     text-align: justify;
     font-size: large;
 }
 
-#rating li {
+#rating li, #adverts li {
     border-radius: 3px;
     border: 3px solid #f0ad4e;
     padding: 10px;
+}
+
+.hide {
+    display: none;
 }
 
 #centers_result ul {
@@ -295,7 +303,7 @@ img[alt="organization_logo"] {
     border-radius: 5px;
 }
 
-#rating ul {
+#rating ul, #adverts ul {
     margin-top: 10px;
     padding-left: 0;
 }
@@ -323,7 +331,7 @@ img[alt="organization_logo"] {
     margin-bottom: 2px;
 }
 
-#rating ul li {
+#rating ul li, #adverts ul li {
     margin-top: 10px;
 }
 

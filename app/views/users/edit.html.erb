@@ -1,0 +1,55 @@
+<div id="adverts" class="col-xs-12 col-lg-6">
+  <h3>Mis anuncios</h3>
+  <% if @user.adverts.count > 0 %>
+      <ul>
+        <%= render @user.adverts %>
+      </ul>
+  <% else %>
+      <p>¡Añade tu primera reseña!</p>
+  <% end %>
+  <button class="btn btn-default" data-toggle="modal" data-target="#advert_modal">Añadir anuncio</button>
+  <br/>
+  <br/>
+</div>
+</div>
+
+<div class="modal fade" id="advert_modal" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <a type="button" class="close" data-dismiss="modal">&times;</a>
+        <h4 class="modal-title">Inicia sesión o regístrate gratis para escribir una reseña</h4>
+      </div>
+      <div class="modal-body">
+        <%= form_tag adverts_path, remote: true do %>
+            <div class="field form-group">
+              <%= label_tag :title, 'Título' %></br>
+              <%= text_field_tag :title, nil, class: 'form-control',required: true %>
+            </div>
+            <div class="field form-group">
+              <%= label_tag :description, "Descripción" %></br>
+              <%= text_area_tag :description, nil, class: 'form-control', required: true %>
+            </div>
+            <div class="actions">
+              <%= submit_tag 'Añadir', class: 'btn btn-default' %>
+            </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="advert_info">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">Se han encontrado los siguientes errores</h4>
+      </div>
+      <div class="modal-body">
+
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+</div>

@@ -8,11 +8,13 @@ Rails.application.routes.draw do
       get 'betters'
     end
   end
+
   resources :centers do
     resources :reviews
   end
 
   resources :users
+  resources :adverts
 
   resource :session, only: [:new, :create, :destroy]
 
