@@ -11,14 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151226155450) do
+ActiveRecord::Schema.define(version: 20151226165642) do
 
   create_table "centers", force: :cascade do |t|
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
     t.string   "address"
     t.string   "images"
-    t.string   "schedule"
     t.string   "geolocation"
     t.string   "phone"
     t.string   "second_phone"
@@ -29,6 +28,9 @@ ActiveRecord::Schema.define(version: 20151226155450) do
     t.string   "longitude"
     t.string   "main_image"
     t.float    "rate"
+    t.string   "monday_friday"
+    t.string   "saturday"
+    t.string   "sunday"
   end
 
   create_table "reviews", force: :cascade do |t|

@@ -27,9 +27,9 @@
           <h3>Horarios <i class="fa fa-clock-o fa-2x"></i>
           </h3>
           <ul>
-            <li>Lunes a Viernes: <%= @center.schedule.split("&")[0] %></li>
-            <li>Sábados: <%= @center.schedule.split("&")[1] %></li>
-            <li>Domingos: <%= @center.schedule.split("&")[2] %></li>
+            <li>Lunes a Viernes: <%= @center.monday_friday %></li>
+            <li>Sábados: <%= @center.saturday %></li>
+            <li>Domingos: <%= @center.sunday %></li>
           </ul>
         </div>
       </div>
@@ -54,9 +54,9 @@
       <div class="schedules hidden-xs">
         <h3>Horarios <i class="fa fa-clock-o"></i></h3>
         <ul>
-          <li>Lunes a Viernes: <%= @center.schedule.split("&")[0] %></li>
-          <li>Sábados: <%= @center.schedule.split("&")[1] %></li>
-          <li>Domingos: <%= @center.schedule.split("&")[2] %></li>
+          <li>Lunes a Viernes: <%= @center.monday_friday %></li>
+          <li>Sábados: <%= @center.saturday %></li>
+          <li>Domingos: <%= @center.sunday %></li>
         </ul>
       </div>
     </div>

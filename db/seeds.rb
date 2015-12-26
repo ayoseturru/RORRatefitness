@@ -9,9 +9,9 @@ Review.create(user_id: 1, center_id: 1, rate: 4.5, title: "Estupendo", comment: 
 User.create email: "test@test.com", username: "test", name: "test", password: "testtest", password_confirmation: "testtest"
 Center.create name: "Centro Deportivo Las rehoyas", address: "parque de las rehoyas", phone: "928202122",
               description: "Estupendísimo", main_image: "rehoyas_1.jpg",
-              schedule: "Lunes a viernes: 7:30-22:30&Sábado: 7:30-18:00&Domingo: cerrado",
+              monday_friday: "7:30-22:30", saturday: "7:30-18:00", sunday: "cerrado",
               latitude: "28.1084143", longitude: "-15.4294968", email: "info@lasrehoyas.com", rate: 4.5, images: "rehoyas_2.jpg&rehoyas_3.jpg"
 Center.create name: "Centro Deportivo Pedro Hidalgo", address: "Carretera de pedro hidalgo", phone: "928202123",
               description: "Estupendísimo", main_image: "hidalgo_1.jpg",
-              schedule: "Lunes a viernes: 7:30-22:30&Sábado: 7:30-18:00&Domingo: cerrado",
+              monday_friday: "7:30-22:30", saturday: "7:30-18:00", sunday: "cerrado",
               latitude: "28.0619663", longitude: "-15.423471", email: "info@hidalgo.com", rate: 3.2, images: "hidalgo_2.jpg"
