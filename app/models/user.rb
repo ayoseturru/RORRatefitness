@@ -1,5 +1,6 @@
 require 'digest'
 class User < ActiveRecord::Base
+  has_many :reviews
   attr_accessor :password
   before_save :encrypt_new_password
   validates :name, presence: {message: "Introduzca su nombre"}, length: {within: 2..16, message: "El nombre debe tener al menos dos caracteres"}

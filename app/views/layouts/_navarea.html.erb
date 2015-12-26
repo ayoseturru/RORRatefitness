@@ -17,7 +17,14 @@
         <% end %>
       </ul>
     </div>
-    <p id="users_area_text"><a href="users.html"><%= session[:username] or "Usuarios" %></a></p>
+    <p id="users_area_text">
+      <% if session[:username] %>
+          <%= session[:username] %>
+      <% else %>
+          <%= link_to "Usuarios", new_user_path %>
+      <% end %>
+    </p>
+
   </div>
 </div>
 <div class="row">

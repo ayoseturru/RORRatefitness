@@ -3,6 +3,15 @@
     padding-top: 300px;
 }
 
+#rating a {
+    color: #FF8C0f;
+    text-transform: uppercase;
+}
+
+#rating a:hover {
+    color: #ffa33f;
+}
+
 #ajax_search form {
     border: 1px solid #000;
     border-radius: 5px;
@@ -45,6 +54,7 @@ img[alt="organization_logo"] {
 }
 
 #users_area_text {
+    color: #FF8C0f;
     display: block;
 }
 
@@ -379,6 +389,10 @@ img[alt="organization_logo"] {
     #users_dropdown a {
         font-size: small;
     }
+
+    #info button {
+        font-size: small;
+    }
 }
 
 @media (max-width: 1300px) {
@@ -387,7 +401,7 @@ img[alt="organization_logo"] {
     }
 
     #rating p {
-        font-size: medium!important;
+        font-size: medium !important;
     }
 
     img[alt="organization_logo"] {

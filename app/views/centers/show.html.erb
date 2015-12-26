@@ -67,26 +67,14 @@
 
       <div id="rating" class="col-xs-12 col-lg-10">
         <h3>Opiniones</h3>
-        <ul>
-          <li>
-            <div>
-              <h3>Ayoseturru</h3>
-              <h4>Excepcional</h4>
-
-              <p>Está muy bien Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolores eaque
-                eius enim, excepturi id illum impedit inventore itaque labore laboriosam molestias nobis
-                quia recusandae tempora voluptas, voluptatibus. Laudantium maxime nemo odit optio qui
-                quibusdam similique? A amet, atque debitis eum illo laudantium, nemo nihil nulla porro
-                rem repudiandae voluptate!
-                <br/>
-                <br/>
-              </p>
-            </div>
-            <h5>22/04/2012</h5>
-          </li>
-        </ul>
-        <br/>
-        <button class="btn btn-default" data-toggle="modal">Añadir reseña</button>
+        <% if @center.reviews.count > 0 %>
+            <ul>
+              <%= render @center.reviews %>
+            </ul>
+        <% else %>
+            <p>¡Aún nadie ha elaborado ninguna reseña, sé el primero!</p>
+        <% end %>
+        <button class="btn btn-default" data-toggle="modal"><%= session[:username] ? "Añadir reseña" : "Inicia sesion para añadir una reseña" %></button>
         <br/>
         <br/>
       </div>

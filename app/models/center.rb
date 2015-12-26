@@ -1,4 +1,5 @@
 class Center < ActiveRecord::Base
+  has_many :reviews, :dependent => :delete_all
   scope :filter, -> (filter = nil) { where("centers.name LIKE ?", "%#{filter}%") }
 
   def get_images

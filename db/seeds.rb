@@ -5,7 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-
+Review.create(user_id: 1, center_id: 1, rate: "4.5", title: "Estupendo", comment: "cualquier cosa")
 User.create email: "test@test.com", username: "test", name: "test", password: "testtest", password_confirmation: "testtest"
 Center.create name: "Centro Deportivo Las rehoyas", address: "parque de las rehoyas", phone: "928202122",
               description: "Estupendísimo", main_image: "rehoyas_1.jpg",

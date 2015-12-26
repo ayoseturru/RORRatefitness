@@ -3,9 +3,12 @@
       <h4>
         <%= link_to center.name, center %>
         <% for i in 1..center.rate.to_i do %>
-            <i class="fa fa-1x fa-star"></i>
+            <i class="fa fa-1x fa-star hidden-xs"></i>
         <% end %>
       </h4>
+      <% for i in 1..center.rate.to_i do %>
+          <i class="fa fa-1x fa-star hidden-sm hidden-md hidden-lg"></i>
+      <% end %>
       <div class="row">
         <%= image_tag "/center_images/#{center.main_image}", alt: "Center Image", class: "col-xs-2 center_main_image img-rounded" %>
         <p class="col-xs-8"><%= center.description %></p>
