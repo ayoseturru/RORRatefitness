@@ -1,3 +1,4 @@
+<%= render "map" %>
 <div class="container-fluid">
   <div class="row">
     <div id="info" class="col-xs-12 col-sm-9 col-md-8 col-lg-8">
@@ -33,51 +34,9 @@
         </div>
       </div>
 
-      <div id="myCarousel" class="carousel slide col-xs-12 col-md-10" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
+      <%= render "images_slider" %>
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <%= image_tag "/center_images/#{@center.main_image}", alt: "Center Image" %>
-          </div>
-
-          <% @center.get_images.each do |image| %>
-              <div class="item">
-                <%= image_tag "/center_images/#{image}", alt: "Center Image" %>
-              </div>
-          <% end %>
-
-        </div>
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-
-      <div id="rating" class="col-xs-12 col-lg-10">
-        <h3>Opiniones</h3>
-        <% if @center.reviews.count > 0 %>
-            <ul>
-              <%= render @center.reviews %>
-            </ul>
-        <% else %>
-            <p>¡Aún nadie ha elaborado ninguna reseña, sé el primero!</p>
-        <% end %>
-        <button class="btn btn-default" data-toggle="modal"><%= session[:username] ? "Añadir reseña" : "Inicia sesion para añadir una reseña" %></button>
-        <br/>
-        <br/>
-      </div>
+      <%= render "rating_area" %>
     </div>
     <div id="info_right" class="col-xs-12 col-sm-3 col-md-4 col-lg-3">
       <br/>
@@ -104,14 +63,9 @@
   </div>
 </div>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQpC-fcG8nNR09V3luqk8ojQ8yw6g2gHc&callback=initMap" async defer>
-</script>
-<script>
-  var map;
-  function initMap() {
-    map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: <%= @center.latitude %>, lng: <%= @center.longitude %>},
-      zoom: 18
-    });
-  }
-</script>
+<% if session[:user_id] %>
+    <%= render "rate_modal" %>
+<% end %>
+
+
+

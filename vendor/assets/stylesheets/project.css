@@ -12,6 +12,16 @@
     color: #ffa33f;
 }
 
+#opinion_modal .modal-body {
+    overflow: auto;
+    height: 300px
+}
+
+#opinion_modal button {
+    margin-top: 15px;
+    margin-button: 15px;
+}
+
 #ajax_search form {
     border: 1px solid #000;
     border-radius: 5px;
