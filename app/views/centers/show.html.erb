@@ -5,7 +5,7 @@
       <h1><%= @center.name %></h1>
 
       <p id="only-starts">Estrellas RateFit: <input id="only-stars" class="rating form-control hide" data-stars="5"
-                                                    value='<%= @center.rate %>'
+                                                    value='<%= @center.get_media %>'
                                                     data-min="0" data-max="5" data-step="0.5" data-disabled="true"
                                                     data-size="xs">
       </p>

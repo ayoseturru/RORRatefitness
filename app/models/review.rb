@@ -4,6 +4,7 @@ class Review < ActiveRecord::Base
   before_save :set_date
   validates :user_id, uniqueness: {message: "No puede valorar dos veces un centro"}
   validates :title, presence: {message: "Es necesario un titulo"}
+  validates :rate, presence: true
 
   def owned_by?(owner)
     return false unless owner.is_a? User

@@ -23,6 +23,7 @@ class CentersController < ApplicationController
   def set_center
     @center = Center.find_by_id(params[:id])
   end
+
 end
 
 # def index
