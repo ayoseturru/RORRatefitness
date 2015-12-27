@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151226183726) do
+ActiveRecord::Schema.define(version: 20151227210651) do
 
   create_table "adverts", force: :cascade do |t|
     t.datetime "created_at",  null: false
@@ -40,6 +40,14 @@ ActiveRecord::Schema.define(version: 20151226183726) do
     t.string   "monday_friday"
     t.string   "saturday"
     t.string   "sunday"
+    t.string   "municipalty"
+    t.string   "municipality"
+    t.string   "price"
+    t.string   "aerobic"
+    t.string   "fitness"
+    t.string   "zumba"
+    t.string   "aquagym"
+    t.string   "tennis"
   end
 
   create_table "reviews", force: :cascade do |t|

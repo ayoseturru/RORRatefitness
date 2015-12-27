@@ -1,0 +1,91 @@
+<div class="container-fluid" id="custom_center_search">
+  <h5 style="color: #ffa33f"><strong>Busqueda especializada</strong></h5>
+  <%= form_tag search_filter_path do %>
+      <div id="municipality" class="col-xs-10 col-lg-4">
+        <label for="mun">Municipio</label>
+        <select name="mun" class="form-control" id="mun">
+          <option>Las Palmas de Gran Canaria</option>
+          <option>Tejeda</option>
+          <option>Telde</option>
+          <option>Gáldar</option>
+        </select>
+        <br>
+      </div>
+      <div class="clearfix visible-xs"></div>
+      <div id="radio_search" class="col-xs-5 col-sm-2 col-lg-2">
+        <strong>Precio</strong>
+        <div class="radio">
+          <label><%= radio_button_tag "price", "low" %>10-25€</label>
+        </div>
+        <div class="radio">
+          <label><%= radio_button_tag "price", "medium" %>25-35€</label>
+        </div>
+        <div class="radio">
+          <label><%= radio_button_tag "price", "high" %>35-50€</label>
+        </div>
+        <div class="radio">
+          <label><%= radio_button_tag "price", "expensive" %>+50€</label>
+        </div>
+      </div>
+      <div id="stars" class="col-xs-6 col-lg-2 col-sm-3">
+        <strong>Valoración</strong>
+        <div class="radio">
+          <label><%= radio_button_tag "stars", "1" %>
+            <i class="fa fa-star"></i>
+          </label>
+        </div>
+        <div class="radio">
+          <label><%= radio_button_tag "stars", "2" %>
+            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+          </label>
+        </div>
+        <div class="radio">
+          <label><%= radio_button_tag "stars", "3" %>
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+          </label>
+        </div>
+        <div class="radio">
+          <label><%= radio_button_tag "stars", "4" %>
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+          </label>
+        </div>
+        <div class="radio">
+          <label><%= radio_button_tag "stars", "5" %>
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+          </label>
+        </div>
+      </div>
+      <div id="services" class="col-xs-12 col-sm-3 col-lg-2">
+        <strong>Servicios</strong>
+        <div class="checkbox">
+          <label><%= check_box_tag "tennis", "tennis" %>
+            Tennis
+          </label>
+        </div>
+        <div class="checkbox">
+          <label><%= check_box_tag "zumba", "zumba" %>
+            Zumba
+          </label>
+        </div>
+        <div class="checkbox">
+          <label><%= check_box_tag "fitness", "fitness" %>
+            Fitness
+          </label>
+        </div>
+        <div class="checkbox">
+          <label><%= check_box_tag "aquagym", "aquagym" %>
+            Aquagym
+          </label>
+        </div>
+        <div class="checkbox">
+          <label><%= check_box_tag "aerobic", "aerobic" %>
+            Aerobic
+          </label>
+        </div>
+      </div>
+      <div class="actions col-xs-12">
+        <%= submit_tag 'Buscar Centro', class: 'btn btn-default' %>
+        <br><br>
+      </div>
+  <% end %>
+</div>

@@ -370,6 +370,21 @@ a[href="#user_edit"] {
     margin-bottom: 15px;
 }
 
+#custom_center_search {
+    border: 3px solid #ffa33f;
+    margin: 5px;
+}
+
+#municipality, #radio_search, #services, #stars {
+    border: 2px solid #f0ad4e;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+#services {
+    margin-bottom: 5px;
+}
+
 @media (max-width: 767px) {
     #myNavbar ul li {
         border-right: 0;
@@ -397,7 +412,6 @@ a[href="#user_edit"] {
     .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
         height: 300px;
     }
-
 
 }
 
@@ -428,7 +442,6 @@ a[href="#user_edit"] {
     #info button {
         font-size: small;
     }
-
 
 }
 

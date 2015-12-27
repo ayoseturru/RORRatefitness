@@ -2,6 +2,10 @@ Rails.application.routes.draw do
   root "welcome#index"
 
   get '/articles/news' => "centers#news"
+  get '/searchs/filter' => "searchs#filter"
+  get "/searchs" => "searchs#index"
+  post "/searchs/filter" => "searchs#filter", as: :search_filter
+
 
   resources :news, only: [:index] do
     collection do

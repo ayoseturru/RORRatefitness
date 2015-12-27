@@ -18,6 +18,11 @@
         <%= render @centers %>
       </ul>
   <% else %>
-      <p id='fail_search'><strong>Su búsqueda no produjo ningún resultado. Por favor, intentelo de nuevo...</strong></p>
+      <p id='fail_search'>
+        <strong>Su búsqueda no produjo ningún resultado. Por favor, intentelo de nuevo...</strong>
+        <br>
+        <br>
+        <%= link_to "Búsqueda personalizada ", "/searchs", class: "btn btn-info" %>
+      </p>
   <% end %>
 </div>
