@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
   validates :name, presence: {message: "Introduzca su nombre"}, length: {within: 2..16, message: "El nombre debe tener al menos dos caracteres"}
   validates :email, uniqueness: {case_sensitive: false, message: "Ya existe un usuario registrado con esa direccion de correo"}, length: {in: 6..40, message: "Correo inválido"}, format: {with: /\A(\S+)@(.+)\.(\S+)\z/, message: "Introduzca una direccion de correo válida"}
   validates :password, confirmation: {message: "Las contraseñas no coindicen"}, length: {within: 8..20, message: "La contraseña debe tener una longitud mínima de 8 caracteres"}, presence: {if: :password_required?, message: "La contraseña no puede estar en blanco"}
-  validates :password_confirmation, presence: true
+  validates :password_confirmation, presence: {message: "Es necesario que confirme la contraseña"}
   validates :username, uniqueness: {case_sensitive: false, message: "El username está ocupado"}, length: {in: 4..20, message: "El nombre de usuario debe tener al menos cuatro caracteres"}
 
   def self.authenticate(username, password)

@@ -18,10 +18,11 @@ class AdvertsController < ApplicationController
       respond_to do |format|
         format.js
       end
-    end
-  else
-    respond_to do |format|
-      format.js { render "fail_destroy.js.erb" }
+    else
+      respond_to do |format|
+        format.js { render "fail_destroy.js.erb" }
+      end
     end
   end
+
 end

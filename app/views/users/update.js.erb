@@ -1,0 +1,4 @@
+$("#user_update input[type='password']").val("");
+$("#user_email").val("<%= @user.email %>");
+$("#info .modal-body").html("<div class='alert alert-success'>Su perfil ha sido actualizado</div>");
+$("#info").modal("show");

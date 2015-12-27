@@ -15,6 +15,7 @@ class ReviewsController < ApplicationController
     @review = Review.new(title: params[:title], comment: params[:comment],
                          center: @center, user: current_user, rate: getMedia(params))
     if @review.save
+      flash[:notice] = "Se ha añadido su reseña correctamente"
       redirect_to @center
     else
       redirect_to :back, flash[:review_error] = @review.errors

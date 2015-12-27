@@ -1,1 +1,3 @@
-$("advert_" + "<%= @advert.id %>").remove();
+$("#advert" + "<%= @advert.id %>").remove();
+$("#info .modal-body").html("<div class='alert alert-info'>Su anuncio ha sido borrado correctamente</div>");
+$("#info").modal("show");

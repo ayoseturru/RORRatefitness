@@ -552,7 +552,7 @@
             10: '10'
         },
         clearButtonTitle: 'Limpiar',
-        clearCaption: 'Sin Valoración'
+        clearCaption: '0'
     };
 
     $.extend($.fn.rating.defaults, $.fn.ratingLocales.en);

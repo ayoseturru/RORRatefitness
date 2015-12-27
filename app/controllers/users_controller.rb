@@ -24,9 +24,13 @@ class UsersController < ApplicationController
 
   def update
     if @user.update(user_params)
-      redirect_to articles_path, notice: 'User successfully updated'
+      respond_to do |format|
+        format.js
+      end
     else
-      render action: :edit
+      respond_to do |format|
+        format.js { render "fail_update.js.erb" }
+      end
     end
   end
 

@@ -107,3 +107,34 @@
 
     </script>
 <% end %>
+
+<div class="modal fade" id="info">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">Información</h4>
+      </div>
+      <div class="modal-body">
+        <% if flash[:notice] %>
+            <div class="alert alert-info">
+              <%= flash[:notice] %>
+            </div>
+        <% end %>
+        <% if flash[:alert] %>
+            <div class="alert alert-info">
+              <%= flash[:alert] %>
+            </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% if flash[:notice] or flash[:alert] %>
+    <script type="text/javascript" charset="utf-8">
+      $(document).ready(function () {
+        $("#info").modal("show");
+      });
+    </script>
+<% end %>
