@@ -1,5 +1,6 @@
 class CentersController < ApplicationController
   before_action :set_center, only: [:show]
+  before_action :authenticate, only: [:edit, :update, :destroy, :create]
 
   def index
     @centers = Center.filter(params[:filter])

@@ -1,16 +1,22 @@
 <li id="advert<%= advert.id %>">
-  <%= div_for advert do %>
-      <h3>
-        <%= advert.user.username %>
-      </h3>
-      <h4>
-        <%= advert.title %>
-      </h4>
-      <p>
-        <%= advert.description %>
+  <%= form_for(advert, remote: true) do |f| %>
+
+      <div class="field form-group">
+        <%= f.label :title %></br>
+        <%= f.text_field :title, required: true, class: "form-control" %>
+      </div>
+
+      <div class="field form-group">
+        <%= f.label :description, "Descripción" %></br>
+        <%= f.text_area :description, required: true, class: "form-control" %>
+      </div>
+
+      <h6><%= advert.date %></h6>
+      <div class="actions">
+        <%= link_to "Eliminar", advert, class: "btn btn-danger", data: {confirm: '¿Realmente quieres borrar este anuncio?'}, method: :delete, remote: true %>
+        <%= f.submit "Actualizar anuncio", class: "btn btn-default" %>
         <br><br>
-      </p>
+      </div>
+
   <% end %>
-  <h5><%= advert.date %></h5>
-  <%= link_to "Eliminar", advert, data: {confirm: '¿Realmente quieres borrar este anuncio?'}, method: :delete, remote: true %>
 </li>

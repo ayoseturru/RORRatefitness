@@ -362,6 +362,14 @@ img[alt="organization_logo"] {
     display: none;
 }
 
+.btn-danger {
+    color: white !important;
+}
+
+a[href="#user_edit"] {
+    margin-bottom: 15px;
+}
+
 @media (max-width: 767px) {
     #myNavbar ul li {
         border-right: 0;
@@ -389,6 +397,7 @@ img[alt="organization_logo"] {
     .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
         height: 300px;
     }
+
 
 }
 
@@ -419,6 +428,8 @@ img[alt="organization_logo"] {
     #info button {
         font-size: small;
     }
+
+
 }
 
 @media (max-width: 1300px) {

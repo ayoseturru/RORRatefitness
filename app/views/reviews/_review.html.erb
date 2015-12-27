@@ -20,6 +20,6 @@
   <% end %>
   <h5><%= review.date %></h5>
   <% if review.owned_by? current_user %>
-      <%= link_to "Eliminar", center_review_path(center_id: @center, id: review), data: {confirm: "¿seguro que quiere eliminar el #{review.id}?"}, method: :delete %>
+      <%= link_to "Eliminar", center_review_path(center_id: @center, id: review), class: "btn btn-danger", data: {confirm: "¿Seguro que quiere eliminar esta reseña?"}, method: :delete %>
   <% end %>
 </li>

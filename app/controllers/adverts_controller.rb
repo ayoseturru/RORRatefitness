@@ -1,4 +1,6 @@
 class AdvertsController < ApplicationController
+  before_action :authenticate, only: [:edit, :update, :destroy, :create]
+
   def create
     @advert = Advert.new(user: current_user, description: params[:description], title: params[:title])
     if @advert.save
@@ -25,4 +27,20 @@ class AdvertsController < ApplicationController
     end
   end
 
+  def update
+    @advert = current_user.adverts.find(params[:id])
+    if @advert.update(advert_params)
+      respond_to do |format|
+        format.js
+      end
+    else
+      respond_to do |format|
+        format.js
+      end
+    end
+  end
+
+  def advert_params
+    params.require(:advert).permit(:title, :description, :user)
+  end
 end

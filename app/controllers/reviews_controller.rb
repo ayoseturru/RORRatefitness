@@ -1,4 +1,6 @@
 class ReviewsController < ApplicationController
+  before_action :authenticate, only: [:edit, :update, :destroy, :create]
+
   def destroy
     @center = Center.find(params[:center_id])
     @review = Review.find(params[:id])

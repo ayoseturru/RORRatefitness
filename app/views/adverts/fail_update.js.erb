@@ -1,0 +1,11 @@
+<% if @advert.errors.any? %>
+<% @info = "" %>
+<% @advert.errors.messages.values.each do |msg| %>
+<% msg.each do |m| %>
+<% @info +=  m + "\n" %>
+<% end %>
+<% end %>
+<% end %>
+
+$("#info .modal-body").html("<div class='alert alert-danger'><%= j @info %></div>");
+$("#info").modal("show");
