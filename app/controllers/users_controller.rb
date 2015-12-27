@@ -22,6 +22,19 @@ class UsersController < ApplicationController
   def edit
   end
 
+  def index
+    @users = User.find_by_municipality(params[:mun_user].downcase)
+  end
+
+  def show
+    @user = User.find_by_id(params[:id])
+    if !@user
+      redirect_to "/searchs", notice: "El usuario no existe" and return false
+    elsif @user.adverts.count == 0
+      redirect_to "/searchs", notice: "¡El usuario #{@user.name} no posee anuncios, ponte en contacto con él y animale a crear uno! Su email: #{@user.email}" and return false
+    end
+  end
+
   def update
     if @user.update(user_params)
       respond_to do |format|

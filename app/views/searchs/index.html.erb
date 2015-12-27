@@ -1,5 +1,25 @@
+<div class="container-fluid" id="custom_user_search">
+  <%= form_tag users_path, method: :get do %>
+      <h5 style="color: #ffa33f"><strong>Búsqueda de entrenadores</strong></h5>
+      <div id="municipality_user" class="col-xs-10 col-lg-4">
+        <label for="mun_user">Municipio</label>
+        <select name="mun_user" class="form-control" id="mun_user">
+          <option>Las Palmas de Gran Canaria</option>
+          <option>Tejeda</option>
+          <option>Telde</option>
+          <option>Gáldar</option>
+        </select>
+        <br>
+        <div class="actions col-xs-12">
+          <%= submit_tag 'Buscar Entrenador', class: 'btn btn-default' %>
+          <br><br>
+        </div>
+      </div>
+  <% end %>
+</div>
+<br>
 <div class="container-fluid" id="custom_center_search">
-  <h5 style="color: #ffa33f"><strong>Busqueda especializada</strong></h5>
+  <h5 style="color: #ffa33f"><strong>Búsqueda especializada</strong></h5>
   <%= form_tag search_filter_path do %>
       <div id="municipality" class="col-xs-10 col-lg-4">
         <label for="mun">Municipio</label>

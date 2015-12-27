@@ -1,0 +1,8 @@
+<li>
+  <%= div_for user do %>
+      <h4>
+        <%= link_to user.name, user %>
+      </h4>
+      <p><i class="fa fa-2x fa-envelope"></i><strong> Contacto con <%= user.name %>:</strong> <%= user.email %></p>
+  <% end %>
+</li>
