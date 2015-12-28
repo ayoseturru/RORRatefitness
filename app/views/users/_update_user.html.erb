@@ -8,12 +8,22 @@
 
     <div class="field form-group">
       <%= f.label :password %></br>
-      <%= f.password_field :password, class: "form-control" %>
+      <%= f.password_field :password, class: "form-control", value: "#{@user.password}" %>
     </div>
 
     <div class="field form-group">
       <%= f.label :password_confirmation %></br>
       <%= f.password_field :password_confirmation, class: "form-control" %>
+    </div>
+
+    <div class="field form-group" class="col-xs-10 col-lg-4">
+      <label for="municipality">Municipio</label>
+      <select name="user[municipality]" class="form-control" id="municipality">
+        <option>Las Palmas de Gran Canaria</option>
+        <option>Tejeda</option>
+        <option>Telde</option>
+        <option>Gáldar</option>
+      </select>
     </div>
 
     <div class="actions">

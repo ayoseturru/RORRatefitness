@@ -9,6 +9,9 @@ class User < ActiveRecord::Base
   validates :password, confirmation: {message: "Las contraseñas no coindicen"}, length: {within: 8..20, message: "La contraseña debe tener una longitud mínima de 8 caracteres"}, presence: {if: :password_required?, message: "La contraseña no puede estar en blanco"}
   validates :password_confirmation, presence: {message: "Es necesario que confirme la contraseña"}
   validates :username, uniqueness: {case_sensitive: false, message: "El username está ocupado"}, length: {in: 4..20, message: "El nombre de usuario debe tener al menos cuatro caracteres"}
+  validates :municipality, presence: true
+  before_save :municipality_to_lower
+  scope :where_municipality, -> (municipality = nil) { where("users.municipality = ?", municipality) }
 
   def self.authenticate(username, password)
     user = find_by_username(username)
@@ -31,6 +34,10 @@ class User < ActiveRecord::Base
 
   def encrypt(string)
     Digest::SHA1.hexdigest(string)
+  end
+
+  def municipality_to_lower
+    self.municipality = self.municipality.downcase
   end
 
 

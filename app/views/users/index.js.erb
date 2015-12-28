@@ -1,0 +1,4 @@
+$("#centers_result ul").html("<%= j render @users %>");
+if ($("#centers_result ul").html() == "") {
+  $("#centers_result ul").html("<li class='alert alert-warning'>No hemos encontrado entrenadores en este municipio.</li>");
+}

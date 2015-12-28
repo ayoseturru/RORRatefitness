@@ -19,7 +19,8 @@
 </div>
 <br>
 <div class="container-fluid" id="custom_center_search">
-  <h5 style="color: #ffa33f"><strong>Búsqueda especializada</strong></h5>
+  <h4 class="col-xs-8" style="color: #ffa33f"><strong>Búsqueda especializada</strong></h4>
+  <%= link_to "Buscar por nombre", centers_path, class: "btn btn-info", id:"name_search" %>
   <%= form_tag search_filter_path do %>
       <div id="municipality" class="col-xs-10 col-lg-4">
         <label for="mun">Municipio</label>
@@ -109,3 +110,9 @@
       </div>
   <% end %>
 </div>
+
+<script>
+  $(document).ready(function () {
+    $("#myNavbar ul li:nth-child(1)").addClass("active");
+  });
+</script>

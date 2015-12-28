@@ -385,6 +385,10 @@ a[href="#user_edit"] {
     margin-bottom: 5px;
 }
 
+#name_search {
+    margin-top: 10px;
+}
+
 @media (max-width: 767px) {
     #myNavbar ul li {
         border-right: 0;

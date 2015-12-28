@@ -14,7 +14,7 @@
 
 <div id="sign_up_form" class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4 col-lg-3 col-sm-offset-2">
   <%= form_for(@user) do |f| %>
-      <h3>¡Regístrate gratis!</h3>
+      <h3>¡Regístrate gratis! <i class="fa fa-user"></i></h3>
       <div class="field form-group">
         <%= f.label :username, 'Nombre de usuario' %></br>
         <%= f.text_field :username, class: 'form-control' %>
@@ -38,6 +38,16 @@
       <div class="field form-group">
         <%= f.label :password_confirmation, 'Repita la contraseña' %></br>
         <%= f.password_field :password_confirmation, class: "form-control" %>
+      </div>
+
+      <div class="field form-group" class="col-xs-10 col-lg-4">
+        <label for="municipality">Municipio</label>
+        <select name="user[municipality]" class="form-control" id="municipality">
+          <option>Las Palmas de Gran Canaria</option>
+          <option>Tejeda</option>
+          <option>Telde</option>
+          <option>Gáldar</option>
+        </select>
       </div>
 
       <div class="actions">

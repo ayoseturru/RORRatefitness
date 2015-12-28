@@ -23,7 +23,17 @@ class UsersController < ApplicationController
   end
 
   def index
-    @users = User.find_by_municipality(params[:mun_user].downcase)
+    @users = User.where_municipality(params[:mun_user].downcase)
+    if @users
+      respond_to do |format|
+        format.html
+        format.js
+      end
+    else
+      respond_to do |format|
+        format.js { render "fail_search.js.erb" }
+      end
+    end
   end
 
   def show
@@ -54,6 +64,6 @@ class UsersController < ApplicationController
   end
 
   def user_params
-    params.require(:user).permit(:email, :password, :password_confirmation, :username, :name)
+    params.require(:user).permit(:email, :password, :password_confirmation, :username, :name, :municipality)
   end
 end

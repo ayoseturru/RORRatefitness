@@ -4,5 +4,10 @@
         <%= link_to user.name, user %>
       </h4>
       <p><i class="fa fa-2x fa-envelope"></i><strong> Contacto con <%= user.name %>:</strong> <%= user.email %></p>
+      <% if user.adverts.count == 0 %>
+      <p class="alert alert-info", style="margin-right: 5px">
+        <%= user.name %> aún no tiene anuncios. Ponte en contacto con él y anímense a hacer ejercicio.
+      </p>
+      <% end %>
   <% end %>
 </li>
