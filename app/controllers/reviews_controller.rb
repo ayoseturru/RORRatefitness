@@ -20,7 +20,7 @@ class ReviewsController < ApplicationController
       flash[:notice] = "Se ha añadido su reseña correctamente"
       redirect_to @center
     else
-      redirect_to :back, flash[:review_error] = @review.errors
+      redirect_to @center, flash[:review_error] = @review.errors
     end
   end
 

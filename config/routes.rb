@@ -13,6 +13,9 @@ Rails.application.routes.draw do
   end
 
   resources :centers do
+    collection do
+      get 'opinions'
+    end
     resources :reviews
   end
 

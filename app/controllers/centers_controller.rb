@@ -25,6 +25,9 @@ class CentersController < ApplicationController
     @center = Center.find_by_id(params[:id])
   end
 
+  def opinions
+    @center = Center.find_by_id(params[:id])
+  end
 end
 
 # def index

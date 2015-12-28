@@ -1,0 +1,75 @@
+<div class="container-fluid">
+  <div class="row">
+    <div id="info" class="col-xs-11 col-xs-offset-1 col-sm-7 col-md-7 col-lg-7">
+      <h1><%= link_to @center.name, @center %></h1>
+    </div>
+    <div id="ratin" class="col-xs-11 col-xs-offset-1 col-sm-7 col-md-7 col-lg-7">
+      <%= form_for([@center, @center.reviews.new]) do %>
+          <div>
+            <div class="form-group">
+              <label for="rate_title">Título:</label>
+              <input name="title" type="text" class="form-control " id="rate_title" required>
+            </div>
+            <br>
+            <h4>Instalaciones:</h4>
+            <input name="infraestructure" type="number" class="rating" data-stars="5" min=0 max=5
+                   step=0.5 data-size="md" required>
+            <hr>
+            <h4>Actividades:</h4>
+            <input name="activities" type="number" class="rating" data-stars="5" min=0 max=5
+                   step=0.5 data-size="md" required>
+            <hr>
+            <h4>Monitores:</h4>
+            <input name="attention" type="number" class="rating" data-stars="5" min=0 max=5 step=0.5
+                   data-size="md" required>
+            <hr>
+            <h4>Limpieza:</h4>
+            <input name="cleaning" type="number" class="rating" data-stars="5" min=0 max=5 step=0.5
+                   data-size="md" required>
+            <hr>
+            <h4>Vestuarios:</h4>
+            <input name="bathroom" type="number" class="rating" data-stars="5" min=0 max=5
+                   step=0.5 data-size="md" required>
+            <hr>
+          </div>
+          <div class="form-group">
+            <p><label for="opinion">Opinión:</label></p>
+            <textarea name="comment" class="form-control col-xs-10" rows="8" id="opinion" required></textarea>
+          </div>
+          <% if session[:username] %>
+              <button class="btn btn-default" data-toggle="modal" data-target="#opinion_modal">Añadir reseña</button>
+          <% else %>
+              <a class="btn btn-default" data-toggle="modal" data-target="#loginModal">Iniciar sesión para añadir
+                una
+                reseña
+              </a>
+          <% end %>
+      <% end %>
+    </div>
+    <div id="info_right" class="col-xs-11 col-sm-3 col-md-4 col-lg-4" style="margin-top:-40px">
+      <br><br><br>
+      <a href="map"></a>
+      <div id="map">
+      </div>
+      <div class="address">
+        <h4>Parque de Las Rehoyas <i class="fa fa-2x fa-map-marker"></i></h4>
+        <h4>Carretera Antigua del Norte, 35014</h4>
+        <h4>Las Palmas de Gran Canaria</h4>
+      </div>
+      <h3>Valoración:</h3>
+      <input id="only-stars" class="rating form-control hide" data-stars="5" value="<%= @center.rate %>"
+             data-min="0" data-max="5" data-step="0.5" data-disabled="true" data-size="md">
+    </div>
+  </div>
+</div>
+
+<script>
+  var map;
+  function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: <%= @center.latitude %>, lng: <%= @center.longitude %>},
+      zoom: 18
+    });
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQpC-fcG8nNR09V3luqk8ojQ8yw6g2gHc&callback=initMap" async defer></script>

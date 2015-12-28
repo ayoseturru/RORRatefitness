@@ -15,5 +15,6 @@
       </div>
       <p><i class="fa fa-2x fa-map-marker"></i><strong> Direccion:</strong> <%= center.address %></p>
       <p><i class="fa fa-2x fa-phone"></i> <strong> Teléfono</strong>: <%= center.phone %></p>
+      <h4><i class="fa fa-star"></i><%= link_to " Valorar", opinions_centers_path(id: center.id) %></h4>
   <% end %>
 </li>
