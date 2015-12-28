@@ -25,6 +25,8 @@ Rails.application.routes.draw do
   resource :session, only: [:new, :create, :destroy]
 
   get '/logout' => "sessions#destroy", as: "logout"
+  get '/notices/centers' => "notices#centers", as: "centers_info"
+  get '/notices/trainners' => "notices#trainners", as: "trainners_info"
   # get ':controller(/:action(/:id(.:format)))'
 
   # The priority is based upon order of creation: first created -> highest priority.

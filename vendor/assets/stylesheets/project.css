@@ -389,9 +389,23 @@ a[href="#user_edit"] {
     margin-top: 10px;
 }
 
-
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
- background-color: inherit;
+    background-color: inherit;
+}
+
+#centers_info p {
+    font-size: large;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+#centers_info {
+    border: 3px solid #ffa33f;
+    border-radius: 5px;
+}
+
+#centers_info h1 {
+    color: #ffa33f;
 }
 
 @media (max-width: 767px) {
@@ -420,6 +434,14 @@ a[href="#user_edit"] {
 
     .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
         height: 300px;
+    }
+
+    #centers_info p {
+        font-size: small;
+    }
+
+    #centers_info h1 {
+        font-size: large;
     }
 
 }
