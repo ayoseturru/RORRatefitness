@@ -1,0 +1,23 @@
+<div id="centers_result" class="col-xs-12 col-sm-10 col-lg-5 col-md-8 col-md-offset-2 col-lg-offset-1">
+  <h2 id="results_title" class="">Centros Deportivos <i class="fa fa-heart"></i></h2>
+  <ul>
+    <%= render @centers %>
+  </ul>
+</div>
+
+<div id="centers_result" class="col-xs-12 col-sm-10 col-md-8 col-lg-4 ">
+  <h2 id="results_title" class="">Anuncios <i class="fa fa-users"></i></h2>
+  <ul>
+    <% @adverts.each do |advert| %>
+        <li>
+          <h2 id="results_title" class=""><%= link_to advert.user.name.upcase, advert.user, style: "color: #FFA33F" %></h2>
+          <h4 class=""><i class="fa fa-envelope"></i> Contacto: <%= advert.user.email %></h4>
+          <div class="advert">
+            <h4><%= advert.title %></h4>
+            <h3><%= advert.description %></h3>
+            <h6><%= advert.date %></h6>
+          </div>
+        </li>
+    <% end %>
+  </ul>
+</div>

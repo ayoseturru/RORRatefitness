@@ -4,6 +4,7 @@ class Advert < ActiveRecord::Base
   validates :title, presence: true
   validates :description, presence: true
   before_save :number_adverts, message: "No puede tener más de 3 anuncios"
+  scope :news, -> { order("created_at DESC").limit(5) }
 
   def number_adverts
     if self.user.adverts.count >= 3
