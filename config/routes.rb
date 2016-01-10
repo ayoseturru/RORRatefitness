@@ -15,6 +15,9 @@ Rails.application.routes.draw do
   resources :centers do
     collection do
       get 'opinions'
+      post "images"
+      post "delete_images"
+      get "admin"
     end
     resources :reviews
   end

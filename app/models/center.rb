@@ -1,7 +1,9 @@
 class Center < ActiveRecord::Base
   validates_presence_of :tennis, :aerobic, :aquagym, :zumba, :fitness, :municipality
   before_save :municipalty_to_lower_case
+  belongs_to :user
   has_many :reviews, :dependent => :delete_all
+  has_many :center_images, :dependent => :destroy
   scope :filter, -> (filter = nil) { where("centers.name LIKE ?", "%#{filter}%") }
   scope :news, -> { order("created_at DESC").limit(5) }
   scope :betters, -> { order("rate DESC").limit(5) }

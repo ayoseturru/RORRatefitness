@@ -22,7 +22,7 @@ class ApplicationController < ActionController::Base
   helper_method :logged_in?
 
   def access_denied
-    flash[:notice] = "Please, log in to continue"
+    flash[:notice] = "Por favor, inicie sesión"
     redirect_to root_url
     return false
   end

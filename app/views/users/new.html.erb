@@ -13,7 +13,7 @@
 <% end %>
 
 <div id="sign_up_form" class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4 col-lg-3 col-sm-offset-2">
-  <%= form_for(@user) do |f| %>
+  <%= form_for @user, url: users_path, html: {multipart: true} do |f| %>
       <h3>¡Regístrate gratis! <i class="fa fa-user"></i></h3>
       <div class="field form-group">
         <%= f.label :username, 'Nombre de usuario' %></br>

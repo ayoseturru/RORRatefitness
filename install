@@ -1,0 +1,977 @@
+Script iniciado (lun 28 dic 2015 19:48:52 WET
+)ayoseturru[~/RateFit](B[m: script/generate paperclip product photo[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@ 
+Script iniciado; el fichero es paperclip
+ayoseturru[~/RateFit](B[m: exitrails sgenerate controller notices[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit push[Krails generate controller noticess[K[3Pexit[Kexitrails sgenerate controller noticess[K[3Pexit[Kscript/generate paperclip product photo[C[1P[1P[1P[1P[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kplugin install git://github.com/thoughtbot/paperclip.git
+plugin: no se encontró la orden
+ayoseturru[~/RateFit](B[m: plugin install git://github.com/thoughtbot/paperclip.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Krails sgenerate controller noticess[K[3Pexitplugin install git://github.com/thoughtbot/paperclip.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kscript/generate paperclip product photo[1P[1P[1P[1P[1P[1P[1P
+generate: no se encontró la orden
+ayoseturru[~/RateFit](B[m: [H[2Jayoseturru[~/RateFit](B[m: rake db:migrate
+ayoseturru[~/RateFit](B[m: rails 
+Usage: rails COMMAND [ARGS]
+
+The most common rails commands are:
+ generate    Generate new code (short-cut alias: "g")
+ console     Start the Rails console (short-cut alias: "c")
+ server      Start the Rails server (short-cut alias: "s")
+ dbconsole   Start a console for the database specified in config/database.yml
+             (short-cut alias: "db")
+ new         Create a new Rails application. "rails new my_app" creates a
+             new application called MyApp in "./my_app"
+
+In addition to those, there are:
+ destroy      Undo code generated with "generate" (short-cut alias: "d")
+ plugin new   Generates skeleton for developing a Rails plugin
+ runner       Run a piece of code in the application environment (short-cut alias: "r")
+
+All commands can be run with -h (or --help) for more information.
+ayoseturru[~/RateFit](B[m: rails c
+Loading development environment (Rails 4.2.5)
+2.2.1 :001 > [H[2J2.2.1 :001 > Producr~[K[K[K[K[K[K[K[KPhoto.column_names
+NameError: uninitialized constant Photo
+	from (irb):1
+	from /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/railties-4.2.5/lib/rails/commands/console.rb:110:in `start'
+	from /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/railties-4.2.5/lib/rails/commands/console.rb:9:in `start'
+	from /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/railties-4.2.5/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/railties-4.2.5/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/railties-4.2.5/lib/rails/commands.rb:17:in `<top (required)>'
+	from /home/ayoseturru/RateFit/bin/rails:9:in `<top (required)>'
+	from /home/ayoseturru/.rvm/rubies/ruby-2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /home/ayoseturru/.rvm/rubies/ruby-2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1:in `<main>'
+2.2.1 :002 > Photo.column_names[K2.2.1 :002 > Photo.column_names[3Pto.column_names[C[C[C[C[C[C[C[C[C[C[C[C[C[Kexit
+ayoseturru[~/RateFit](B[m: [H[2Jayoseturru[~/RateFit](B[m: ge[Kge[K[Kem paperclip
+ERROR:  While executing gem ... (Gem::CommandLineError)
+    Unknown command paperclip
+ayoseturru[~/RateFit](B[m: gem paperclip[C[C'paperclip[C[C[C[C[C[C[C[C[C'
+ERROR:  While executing gem ... (Gem::CommandLineError)
+    Unknown command paperclip
+ayoseturru[~/RateFit](B[m: [H[2Jayoseturru[~/RateFit](B[m: bundle install
+Fetching gem metadata from https://rubygems.org/...........
+Fetching version metadata from https://rubygems.org/...
+Fetching dependency metadata from https://rubygems.org/..
+Resolving dependencies...
+Using rake 10.4.2
+Using i18n 0.7.0
+Using json 1.8.3
+Using minitest 5.8.3
+Using thread_safe 0.3.5
+Using tzinfo 1.2.2
+Using activesupport 4.2.5
+Using builder 3.2.2
+Using erubis 2.7.0
+Using mini_portile 0.6.2
+Using nokogiri 1.6.6.4
+Using rails-deprecated_sanitizer 1.0.3
+Using rails-dom-testing 1.0.7
+Using loofah 2.0.3
+Using rails-html-sanitizer 1.0.2
+Using actionview 4.2.5
+Using rack 1.6.4
+Using rack-test 0.6.3
+Using actionpack 4.2.5
+Using globalid 0.3.6
+Using activejob 4.2.5
+Using mime-types 2.99
+Using mail 2.6.3
+Using actionmailer 4.2.5
+Using activemodel 4.2.5
+Using arel 6.0.3
+Using activerecord 4.2.5
+Using debug_inspector 0.0.2
+Using binding_of_caller 0.7.2
+Using bundler 1.8.4
+Using byebug 8.2.0
+[32mInstalling climate_control 0.0.3[0m
+[32mInstalling cocaine 0.5.8[0m
+Using coffee-script-source 1.10.0
+Using execjs 2.6.0
+Using coffee-script 2.4.1
+Using thor 0.19.1
+Using railties 4.2.5
+Using coffee-rails 4.1.0
+Using font-awesome-rails 4.5.0.0
+Using multi_json 1.11.2
+Using jbuilder 2.3.2
+Using jquery-rails 4.0.5
+Using jquery-ui-rails 5.0.5
+[32mInstalling mimemagic 0.3.0[0m
+[32mInstalling paperclip 4.3.2[0m
+Using sprockets 3.4.0
+Using sprockets-rails 2.3.3
+Using rails 4.2.5
+Using rdoc 4.2.0
+Using sass 3.4.19
+Using tilt 2.0.1
+Using sass-rails 5.0.4
+Using sdoc 0.4.1
+Using spring 1.4.4
+Using sqlite3 1.3.11
+Using uglifier 2.7.2
+Using web-console 2.2.1
+[32mBundle complete! 14 Gemfile dependencies, 58 gems now installed.[0m
+[32mUse `bundle show [gemname]` to see where a bundled gem is installed.[0m
+ayoseturru[~/RateFit](B[m: [H[2Jayoseturru[~/RateFit](B[m: rails g model Post title:string body:string image:attachment
+[1m[37m      invoke[0m  active_record
+[1m[32m      create[0m    db/migrate/20151228200548_create_posts.rb
+[1m[32m      create[0m    app/models/post.rb
+[1m[37m      invoke[0m    test_unit
+[1m[32m      create[0m      test/models/post_test.rb
+[1m[32m      create[0m      test/fixtures/posts.yml
+ayoseturru[~/RateFit](B[m: rails g migration AddPaperclipToPost
+[1m[37m      invoke[0m  active_record
+[1m[32m      create[0m    db/migrate/20151228200605_add_paperclip_to_post.rb
+ayoseturru[~/RateFit](B[m: rails generate controller posts
+[1m[32m      create[0m  app/controllers/posts_controller.rb
+[1m[37m      invoke[0m  erb
+[1m[32m      create[0m    app/views/posts
+[1m[37m      invoke[0m  test_unit
+[1m[32m      create[0m    test/controllers/posts_controller_test.rb
+[1m[37m      invoke[0m  helper
+[1m[32m      create[0m    app/helpers/posts_helper.rb
+[1m[37m      invoke[0m    test_unit
+[1m[37m      invoke[0m  assets
+[1m[37m      invoke[0m    coffee
+[1m[32m      create[0m      app/assets/javascripts/posts.coffee
+[1m[37m      invoke[0m    scss
+[1m[32m      create[0m      app/assets/stylesheets/posts.scss
+ayoseturru[~/RateFit](B[m: exit
+exit
+Script terminado; el fichero es paperclip
+ayoseturru[~/RateFit](B[m: rake db:migrate
+== 20151228200548 CreatePosts: migrating ======================================
+-- create_table(:posts)
+   -> 0.0010s
+== 20151228200548 CreatePosts: migrated (0.0011s) =============================
+
+== 20151228200605 AddPaperclipToPost: migrating ===============================
+-- add_attachment(:posts, :image)
+rake aborted!
+StandardError: An error has occurred, this and all later migrations canceled:
+
+SQLite3::SQLException: duplicate column name: image_file_name: ALTER TABLE "posts" ADD "image_file_name" varchar/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:91:in `initialize'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:91:in `new'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:91:in `prepare'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:134:in `execute'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:329:in `block in execute'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract_adapter.rb:472:in `block in log'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activesupport-4.2.5/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract_adapter.rb:466:in `log'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:329:in `execute'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/schema_statements.rb:393:in `add_column'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:453:in `add_column'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:30:in `block (2 levels) in add_attachment'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:28:in `each_pair'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:28:in `block in add_attachment'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:27:in `each'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:27:in `add_attachment'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:665:in `block in method_missing'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:634:in `block in say_with_time'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:634:in `say_with_time'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:654:in `method_missing'
+/home/ayoseturru/RateFit/db/migrate/20151228200605_add_paperclip_to_post.rb:3:in `change'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:608:in `exec_migration'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:592:in `block (2 levels) in migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:591:in `block in migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:292:in `with_connection'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:590:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:768:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:998:in `block in execute_migration_in_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:1044:in `block in ddl_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `block in transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/transaction.rb:184:in `within_new_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/transactions.rb:220:in `transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:1044:in `ddl_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:997:in `execute_migration_in_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:959:in `block in migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:955:in `each'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:955:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:823:in `up'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:801:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/tasks/database_tasks.rb:137:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/railties/databases.rake:44:in `block (2 levels) in <top (required)>'
+ActiveRecord::StatementInvalid: SQLite3::SQLException: duplicate column name: image_file_name: ALTER TABLE "posts" ADD "image_file_name" varchar
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:91:in `initialize'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:91:in `new'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:91:in `prepare'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:134:in `execute'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:329:in `block in execute'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract_adapter.rb:472:in `block in log'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activesupport-4.2.5/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract_adapter.rb:466:in `log'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:329:in `execute'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/schema_statements.rb:393:in `add_column'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:453:in `add_column'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:30:in `block (2 levels) in add_attachment'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:28:in `each_pair'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:28:in `block in add_attachment'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:27:in `each'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:27:in `add_attachment'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:665:in `block in method_missing'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:634:in `block in say_with_time'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:634:in `say_with_time'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:654:in `method_missing'
+/home/ayoseturru/RateFit/db/migrate/20151228200605_add_paperclip_to_post.rb:3:in `change'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:608:in `exec_migration'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:592:in `block (2 levels) in migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:591:in `block in migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:292:in `with_connection'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:590:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:768:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:998:in `block in execute_migration_in_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:1044:in `block in ddl_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `block in transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/transaction.rb:184:in `within_new_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/transactions.rb:220:in `transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:1044:in `ddl_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:997:in `execute_migration_in_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:959:in `block in migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:955:in `each'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:955:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:823:in `up'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:801:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/tasks/database_tasks.rb:137:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/railties/databases.rake:44:in `block (2 levels) in <top (required)>'
+SQLite3::SQLException: duplicate column name: image_file_name
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:91:in `initialize'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:91:in `new'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:91:in `prepare'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:134:in `execute'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:329:in `block in execute'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract_adapter.rb:472:in `block in log'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activesupport-4.2.5/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract_adapter.rb:466:in `log'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:329:in `execute'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/schema_statements.rb:393:in `add_column'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:453:in `add_column'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:30:in `block (2 levels) in add_attachment'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:28:in `each_pair'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:28:in `block in add_attachment'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:27:in `each'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:27:in `add_attachment'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:665:in `block in method_missing'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:634:in `block in say_with_time'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:634:in `say_with_time'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:654:in `method_missing'
+/home/ayoseturru/RateFit/db/migrate/20151228200605_add_paperclip_to_post.rb:3:in `change'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:608:in `exec_migration'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:592:in `block (2 levels) in migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:591:in `block in migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:292:in `with_connection'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:590:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:768:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:998:in `block in execute_migration_in_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:1044:in `block in ddl_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `block in transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/transaction.rb:184:in `within_new_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/transactions.rb:220:in `transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:1044:in `ddl_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:997:in `execute_migration_in_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:959:in `block in migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:955:in `each'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:955:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:823:in `up'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:801:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/tasks/database_tasks.rb:137:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/railties/databases.rake:44:in `block (2 levels) in <top (required)>'
+Tasks: TOP => db:migrate
+(See full trace by running task with --trace)
+ayoseturru[~/RateFit](B[m: [H[2Jayoseturru[~/RateFit](B[m: rake db:setup
+db/development.sqlite3 already exists
+db/test.sqlite3 already exists
+-- create_table("administrators", {:force=>:cascade})
+   -> 0.0135s
+-- create_table("adverts", {:force=>:cascade})
+   -> 0.0102s
+-- create_table("centers", {:force=>:cascade})
+   -> 0.0092s
+-- create_table("reviews", {:force=>:cascade})
+   -> 0.0112s
+-- create_table("users", {:force=>:cascade})
+   -> 0.0118s
+-- initialize_schema_migrations_table()
+   -> 0.0135s
+-- create_table("administrators", {:force=>:cascade})
+   -> 0.0250s
+-- create_table("adverts", {:force=>:cascade})
+   -> 0.0082s
+-- create_table("centers", {:force=>:cascade})
+   -> 0.0069s
+-- create_table("reviews", {:force=>:cascade})
+   -> 0.0119s
+-- create_table("users", {:force=>:cascade})
+   -> 0.0227s
+-- initialize_schema_migrations_table()
+   -> 0.0002s
+You have 1 pending migration:
+  20151228200605 AddPaperclipToPost
+Run `rake db:migrate` to update your database then try again.
+ayoseturru[~/RateFit](B[m: rk[Kake db:migrate
+== 20151228200605 AddPaperclipToPost: migrating ===============================
+-- add_attachment(:posts, :image)
+rake aborted!
+StandardError: An error has occurred, this and all later migrations canceled:
+
+SQLite3::SQLException: duplicate column name: image_file_name: ALTER TABLE "posts" ADD "image_file_name" varchar/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:91:in `initialize'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:91:in `new'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:91:in `prepare'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:134:in `execute'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:329:in `block in execute'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract_adapter.rb:472:in `block in log'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activesupport-4.2.5/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract_adapter.rb:466:in `log'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:329:in `execute'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/schema_statements.rb:393:in `add_column'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:453:in `add_column'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:30:in `block (2 levels) in add_attachment'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:28:in `each_pair'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:28:in `block in add_attachment'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:27:in `each'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:27:in `add_attachment'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:665:in `block in method_missing'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:634:in `block in say_with_time'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:634:in `say_with_time'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:654:in `method_missing'
+/home/ayoseturru/RateFit/db/migrate/20151228200605_add_paperclip_to_post.rb:3:in `change'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:608:in `exec_migration'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:592:in `block (2 levels) in migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:591:in `block in migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:292:in `with_connection'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:590:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:768:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:998:in `block in execute_migration_in_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:1044:in `block in ddl_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `block in transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/transaction.rb:184:in `within_new_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/transactions.rb:220:in `transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:1044:in `ddl_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:997:in `execute_migration_in_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:959:in `block in migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:955:in `each'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:955:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:823:in `up'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:801:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/tasks/database_tasks.rb:137:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/railties/databases.rake:44:in `block (2 levels) in <top (required)>'
+ActiveRecord::StatementInvalid: SQLite3::SQLException: duplicate column name: image_file_name: ALTER TABLE "posts" ADD "image_file_name" varchar
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:91:in `initialize'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:91:in `new'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:91:in `prepare'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:134:in `execute'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:329:in `block in execute'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract_adapter.rb:472:in `block in log'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activesupport-4.2.5/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract_adapter.rb:466:in `log'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:329:in `execute'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/schema_statements.rb:393:in `add_column'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:453:in `add_column'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:30:in `block (2 levels) in add_attachment'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:28:in `each_pair'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:28:in `block in add_attachment'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:27:in `each'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:27:in `add_attachment'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:665:in `block in method_missing'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:634:in `block in say_with_time'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:634:in `say_with_time'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:654:in `method_missing'
+/home/ayoseturru/RateFit/db/migrate/20151228200605_add_paperclip_to_post.rb:3:in `change'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:608:in `exec_migration'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:592:in `block (2 levels) in migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:591:in `block in migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:292:in `with_connection'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:590:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:768:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:998:in `block in execute_migration_in_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:1044:in `block in ddl_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `block in transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/transaction.rb:184:in `within_new_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/transactions.rb:220:in `transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:1044:in `ddl_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:997:in `execute_migration_in_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:959:in `block in migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:955:in `each'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:955:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:823:in `up'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:801:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/tasks/database_tasks.rb:137:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/railties/databases.rake:44:in `block (2 levels) in <top (required)>'
+SQLite3::SQLException: duplicate column name: image_file_name
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:91:in `initialize'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:91:in `new'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:91:in `prepare'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:134:in `execute'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:329:in `block in execute'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract_adapter.rb:472:in `block in log'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activesupport-4.2.5/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract_adapter.rb:466:in `log'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:329:in `execute'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/schema_statements.rb:393:in `add_column'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:453:in `add_column'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:30:in `block (2 levels) in add_attachment'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:28:in `each_pair'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:28:in `block in add_attachment'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:27:in `each'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:27:in `add_attachment'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:665:in `block in method_missing'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:634:in `block in say_with_time'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:634:in `say_with_time'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:654:in `method_missing'
+/home/ayoseturru/RateFit/db/migrate/20151228200605_add_paperclip_to_post.rb:3:in `change'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:608:in `exec_migration'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:592:in `block (2 levels) in migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:591:in `block in migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:292:in `with_connection'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:590:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:768:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:998:in `block in execute_migration_in_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:1044:in `block in ddl_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `block in transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/transaction.rb:184:in `within_new_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/transactions.rb:220:in `transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:1044:in `ddl_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:997:in `execute_migration_in_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:959:in `block in migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:955:in `each'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:955:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:823:in `up'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:801:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/tasks/database_tasks.rb:137:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/railties/databases.rake:44:in `block (2 levels) in <top (required)>'
+Tasks: TOP => db:migrate
+(See full trace by running task with --trace)
+ayoseturru[~/RateFit](B[m: [H[2Jayoseturru[~/RateFit](B[m: rails c
+Loading development environment (Rails 4.2.5)
+2.2.1 :001 > Post.column_names
+ => ["id", "title", "body", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "created_at", "updated_at"] 
+2.2.1 :002 > Post.create()[C[K[K
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2015-12-28 20:12:56.675231"], ["updated_at", "2015-12-28 20:12:56.675231"]]
+  [1m[36m (10.3ms)[0m  [1mcommit transaction[0m
+ => #<Post id: 1, title: nil, body: nil, image_file_name: nil, image_content_type: nil, image_file_size: nil, image_updated_at: nil, created_at: "2015-12-28 20:12:56", updated_at: "2015-12-28 20:12:56"> 
+2.2.1 :003 > Post.create[K[K[K[K[K[Kfirst
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY "posts"."id" ASC LIMIT 1
+ => #<Post id: 1, title: nil, body: nil, image_file_name: nil, image_content_type: nil, image_file_size: nil, image_updated_at: nil, created_at: "2015-12-28 20:12:56", updated_at: "2015-12-28 20:12:56"> 
+2.2.1 :004 > [H[2J2.2.1 :004 > exit
+ayoseturru[~/RateFit](B[m: rails s
+=> Booting WEBrick
+=> Rails 4.2.5 application starting in development on http://localhost:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2015-12-28 20:13:19] INFO  WEBrick 1.3.1
+[2015-12-28 20:13:19] INFO  ruby 2.2.1 (2015-02-26) [x86_64-linux]
+[2015-12-28 20:13:19] INFO  WEBrick::HTTPServer#start: pid=9815 port=3000
+
+
+Started GET "/posts/index" for 127.0.0.1 at 2015-12-28 20:13:22 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ayoseturru/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ayoseturru/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ayoseturru/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.4ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.1ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (14.4ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (27.6ms)
+^C[2015-12-28 20:13:53] INFO  going to shutdown ...
+[2015-12-28 20:13:53] INFO  WEBrick::HTTPServer#start done.
+Exiting
+ayoseturru[~/RateFit](B[m: rake db:migrate
+== 20151228200605 AddPaperclipToPost: migrating ===============================
+-- add_attachment(:posts, :image)
+rake aborted!
+StandardError: An error has occurred, this and all later migrations canceled:
+
+SQLite3::SQLException: duplicate column name: image_file_name: ALTER TABLE "posts" ADD "image_file_name" varchar/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:91:in `initialize'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:91:in `new'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:91:in `prepare'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:134:in `execute'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:329:in `block in execute'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract_adapter.rb:472:in `block in log'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activesupport-4.2.5/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract_adapter.rb:466:in `log'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:329:in `execute'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/schema_statements.rb:393:in `add_column'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:453:in `add_column'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:30:in `block (2 levels) in add_attachment'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:28:in `each_pair'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:28:in `block in add_attachment'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:27:in `each'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:27:in `add_attachment'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:665:in `block in method_missing'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:634:in `block in say_with_time'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:634:in `say_with_time'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:654:in `method_missing'
+/home/ayoseturru/RateFit/db/migrate/20151228200605_add_paperclip_to_post.rb:3:in `change'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:608:in `exec_migration'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:592:in `block (2 levels) in migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:591:in `block in migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:292:in `with_connection'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:590:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:768:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:998:in `block in execute_migration_in_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:1044:in `block in ddl_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `block in transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/transaction.rb:184:in `within_new_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/transactions.rb:220:in `transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:1044:in `ddl_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:997:in `execute_migration_in_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:959:in `block in migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:955:in `each'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:955:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:823:in `up'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:801:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/tasks/database_tasks.rb:137:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/railties/databases.rake:44:in `block (2 levels) in <top (required)>'
+ActiveRecord::StatementInvalid: SQLite3::SQLException: duplicate column name: image_file_name: ALTER TABLE "posts" ADD "image_file_name" varchar
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:91:in `initialize'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:91:in `new'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:91:in `prepare'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:134:in `execute'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:329:in `block in execute'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract_adapter.rb:472:in `block in log'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activesupport-4.2.5/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract_adapter.rb:466:in `log'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:329:in `execute'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/schema_statements.rb:393:in `add_column'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:453:in `add_column'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:30:in `block (2 levels) in add_attachment'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:28:in `each_pair'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:28:in `block in add_attachment'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:27:in `each'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:27:in `add_attachment'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:665:in `block in method_missing'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:634:in `block in say_with_time'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:634:in `say_with_time'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:654:in `method_missing'
+/home/ayoseturru/RateFit/db/migrate/20151228200605_add_paperclip_to_post.rb:3:in `change'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:608:in `exec_migration'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:592:in `block (2 levels) in migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:591:in `block in migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:292:in `with_connection'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:590:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:768:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:998:in `block in execute_migration_in_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:1044:in `block in ddl_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `block in transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/transaction.rb:184:in `within_new_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/transactions.rb:220:in `transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:1044:in `ddl_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:997:in `execute_migration_in_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:959:in `block in migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:955:in `each'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:955:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:823:in `up'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:801:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/tasks/database_tasks.rb:137:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/railties/databases.rake:44:in `block (2 levels) in <top (required)>'
+SQLite3::SQLException: duplicate column name: image_file_name
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:91:in `initialize'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:91:in `new'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:91:in `prepare'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:134:in `execute'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:329:in `block in execute'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract_adapter.rb:472:in `block in log'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activesupport-4.2.5/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract_adapter.rb:466:in `log'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:329:in `execute'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/schema_statements.rb:393:in `add_column'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:453:in `add_column'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:30:in `block (2 levels) in add_attachment'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:28:in `each_pair'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:28:in `block in add_attachment'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:27:in `each'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/paperclip-4.3.2/lib/paperclip/schema.rb:27:in `add_attachment'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:665:in `block in method_missing'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:634:in `block in say_with_time'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:634:in `say_with_time'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:654:in `method_missing'
+/home/ayoseturru/RateFit/db/migrate/20151228200605_add_paperclip_to_post.rb:3:in `change'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:608:in `exec_migration'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:592:in `block (2 levels) in migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:591:in `block in migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:292:in `with_connection'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:590:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:768:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:998:in `block in execute_migration_in_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:1044:in `block in ddl_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `block in transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/transaction.rb:184:in `within_new_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/transactions.rb:220:in `transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:1044:in `ddl_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:997:in `execute_migration_in_transaction'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:959:in `block in migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:955:in `each'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:955:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:823:in `up'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/migration.rb:801:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/tasks/database_tasks.rb:137:in `migrate'
+/home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/activerecord-4.2.5/lib/active_record/railties/databases.rake:44:in `block (2 levels) in <top (required)>'
+Tasks: TOP => db:migrate
+(See full trace by running task with --trace)
+ayoseturru[~/RateFit](B[m: [H[2Jayoseturru[~/RateFit](B[m: rake db:migrate
+== 20151228200605 AddPaperclipToPost: migrating ===============================
+== 20151228200605 AddPaperclipToPost: migrated (0.0000s) ======================
+
+ayoseturru[~/RateFit](B[m: [H[2Jayoseturru[~/RateFit](B[m: rails s
+=> Booting WEBrick
+=> Rails 4.2.5 application starting in development on http://localhost:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2015-12-28 20:14:32] INFO  WEBrick 1.3.1
+[2015-12-28 20:14:32] INFO  ruby 2.2.1 (2015-02-26) [x86_64-linux]
+[2015-12-28 20:14:32] INFO  WEBrick::HTTPServer#start: pid=9845 port=3000
+
+
+Started GET "/posts/index" for 127.0.0.1 at 2015-12-28 20:14:36 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY "posts"."id" ASC LIMIT 1
+  Rendered posts/index.html.erb within layouts/application (10.1ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (undefined method `post_path' for #<#<Class:0x00000004779008>:0x0000000476bac0>):
+    1: <% form_for @post, :html => {:multipart => true} do |f| %>
+    2:     <%= f.file_field :photo %>
+    3: <% end %>
+    4: 
+  app/views/posts/index.html.erb:1:in `_app_views_posts_index_html_erb___2326220150920336065_37269700'
+
+
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.1ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.6ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (12.3ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (26.0ms)
+
+
+Started GET "/posts/index" for 127.0.0.1 at 2015-12-28 20:14:37 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY "posts"."id" ASC LIMIT 1[0m
+  Rendered posts/index.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `post_path' for #<#<Class:0x00000004779008>:0x000000046413e8>):
+    1: <% form_for @post, :html => {:multipart => true} do |f| %>
+    2:     <%= f.file_field :photo %>
+    3: <% end %>
+    4: 
+  app/views/posts/index.html.erb:1:in `_app_views_posts_index_html_erb___2326220150920336065_37269700'
+
+
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.3ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (13.1ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (24.9ms)
+
+
+Started GET "/posts/index" for 127.0.0.1 at 2015-12-28 20:15:18 +0000
+
+AbstractController::ActionNotFound (The action 'show' could not be found for PostsController):
+  actionpack (4.2.5) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ayoseturru/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ayoseturru/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ayoseturru/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.3ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.9ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (24.7ms)
+
+
+Started GET "/posts/index" for 127.0.0.1 at 2015-12-28 20:15:19 +0000
+
+AbstractController::ActionNotFound (The action 'show' could not be found for PostsController):
+  actionpack (4.2.5) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ayoseturru/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ayoseturru/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ayoseturru/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.3ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.6ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (24.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-12-28 20:15:25 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY "posts"."id" ASC LIMIT 1
+  Rendered posts/index.html.erb within layouts/application (29.3ms)
+  Rendered layouts/_navarea.html.erb (4.8ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+  Rendered layouts/_register.html.erb (0.2ms)
+Completed 200 OK in 491ms (Views: 482.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-28 20:15:25 +0000
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 20:15:25 +0000
+
+
+Started GET "/images/med/missing.png" for 127.0.0.1 at 2015-12-28 20:15:25 +0000
+
+ActionController::RoutingError (No route matches [GET] "/images/med/missing.png"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ayoseturru/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ayoseturru/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ayoseturru/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.9ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (14.7ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (5.4ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (35.5ms)
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2015-12-28 20:15:29 +0000
+
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ayoseturru/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ayoseturru/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ayoseturru/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.7ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.6ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.9ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.8ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/web-console-

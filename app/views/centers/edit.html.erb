@@ -1,0 +1,90 @@
+<% if @center.errors.any? %>
+    <div class="alert alert-danger col-xs-8 col-xs-offset-2 hidden-sm col-md-3 hidden-md hidden-lg">
+      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+      <h4>No hemos podido crear su centro, es necesario que corrija los siguientes errores:</h4>
+      <ul id="new_user_errors">
+        <% @center.errors.messages.values.each do |msg| %>
+            <% msg.each do |m| %>
+                <li><%= m %></li>
+            <% end %>
+        <% end %>
+      </ul>
+    </div>
+<% end %>
+
+<div id="sign_up_form" class="col-xs-8 col-xs-offset-2 col-sm-4 col-lg-3 col-sm-offset-2">
+  <%= form_for @center, html: {multipart: true} do |f| %>
+      <h3>Información general <i class="fa fa-info"></i></h3>
+
+      <div class="field form-group">
+        <%= f.label :phone, 'Teléfono' %></br>
+        <%= f.text_field :phone, class: "form-control" %>
+      </div>
+
+      <div class="field form-group">
+        <%= f.label :second_phone, 'Teléfono secundario' %></br>
+        <%= f.text_field :second_phone, class: "form-control" %>
+      </div>
+
+      <div class="field form-group">
+        <%= f.label :email, 'Email' %></br>
+        <%= f.text_field :email, class: "form-control" %>
+      </div>
+
+      <div class="field form-group">
+        <%= f.label :description, 'Descripción' %></br>
+        <%= f.text_area :description, class: "form-control" %>
+      </div>
+
+      <h3>Horarios: </h3>
+
+      <div class="field form-group">
+        <%= f.label :monday_friday, 'Lunes a viernes' %></br>
+        <%= f.text_field :monday_friday, class: "form-control" %>
+      </div>
+
+      <div class="field form-group">
+        <%= f.label :saturday, 'Sábados' %></br>
+        <%= f.text_field :saturday, class: "form-control" %>
+      </div>
+
+      <div class="field form-group">
+        <%= f.label :sunday, 'Domingos' %></br>
+        <%= f.text_field :sunday, class: "form-control" %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit 'Crear', :class => 'btn btn-default' %>
+      </div>
+      <br>
+
+  <% end %>
+</div>
+
+<div id="sign_up_form" class="col-xs-8 col-xs-offset-2 col-sm-5 col-sm-offset-1 col-lg-4 col-lg-offset-1">
+  <h3>Añadir imágenes <i class="fa fa-photo"></i></h3>
+  <%= form_tag images_centers_path(center_id: @center), method: :post, multipart: true do %>
+      <%= file_field_tag :images, multiple: true, name: "images[]", type: "file", required: true %>
+      <br>
+      <div class="actions">
+        <%= submit_tag 'Añadir imágenes', :class => 'btn btn-default' %>
+      </div>
+  <% end %>
+  <br><br>
+</div>
+
+<div id="sign_up_form" class="col-xs-8 col-xs-offset-2 col-sm-5 col-sm-offset-1 col-lg-4 col-lg-offset-1">
+  <h3>Editar mis imágenes <i class="fa fa-photo"></i></h3>
+  <ul id="delete_images">
+    <% @center.center_images.each do |image| %>
+        <li id="<%= image.id %>">
+          <div>
+            <%= image_tag image.photo.url(:thumb), alt: "Center Image" %>
+            <%= link_to "Eliminar", delete_images_centers_path(image_id: image.id, center_id: @center.id), method: :post, remote: true %>
+            <i class="fa fa-trash"></i>
+          </div>
+        </li>
+        <br>
+    <% end %>
+  </ul>
+</div>

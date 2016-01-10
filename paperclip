@@ -1,0 +1,139 @@
+Script iniciado (lun 28 dic 2015 19:49:14 WET
+)ayoseturru[~/RateFit](B[m: exitrails sgenerate controller notices[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit push[Krails generate controller noticess[K[3Pexit[Kexitrails sgenerate controller noticess[K[3Pexit[Kscript/generate paperclip product photo[C[1P[1P[1P[1P[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kplugin install git://github.com/thoughtbot/paperclip.git
+plugin: no se encontró la orden
+ayoseturru[~/RateFit](B[m: plugin install git://github.com/thoughtbot/paperclip.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Krails sgenerate controller noticess[K[3Pexitplugin install git://github.com/thoughtbot/paperclip.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kscript/generate paperclip product photo[1P[1P[1P[1P[1P[1P[1P
+generate: no se encontró la orden
+ayoseturru[~/RateFit](B[m: [H[2Jayoseturru[~/RateFit](B[m: rake db:migrate
+ayoseturru[~/RateFit](B[m: rails 
+Usage: rails COMMAND [ARGS]
+
+The most common rails commands are:
+ generate    Generate new code (short-cut alias: "g")
+ console     Start the Rails console (short-cut alias: "c")
+ server      Start the Rails server (short-cut alias: "s")
+ dbconsole   Start a console for the database specified in config/database.yml
+             (short-cut alias: "db")
+ new         Create a new Rails application. "rails new my_app" creates a
+             new application called MyApp in "./my_app"
+
+In addition to those, there are:
+ destroy      Undo code generated with "generate" (short-cut alias: "d")
+ plugin new   Generates skeleton for developing a Rails plugin
+ runner       Run a piece of code in the application environment (short-cut alias: "r")
+
+All commands can be run with -h (or --help) for more information.
+ayoseturru[~/RateFit](B[m: rails c
+Loading development environment (Rails 4.2.5)
+2.2.1 :001 > [H[2J2.2.1 :001 > Producr~[K[K[K[K[K[K[K[KPhoto.column_names
+NameError: uninitialized constant Photo
+	from (irb):1
+	from /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/railties-4.2.5/lib/rails/commands/console.rb:110:in `start'
+	from /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/railties-4.2.5/lib/rails/commands/console.rb:9:in `start'
+	from /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/railties-4.2.5/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/railties-4.2.5/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /home/ayoseturru/.rvm/gems/ruby-2.2.1@blog-gemset/gems/railties-4.2.5/lib/rails/commands.rb:17:in `<top (required)>'
+	from /home/ayoseturru/RateFit/bin/rails:9:in `<top (required)>'
+	from /home/ayoseturru/.rvm/rubies/ruby-2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /home/ayoseturru/.rvm/rubies/ruby-2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1:in `<main>'
+2.2.1 :002 > Photo.column_names[K2.2.1 :002 > Photo.column_names[3Pto.column_names[C[C[C[C[C[C[C[C[C[C[C[C[C[Kexit
+ayoseturru[~/RateFit](B[m: [H[2Jayoseturru[~/RateFit](B[m: ge[Kge[K[Kem paperclip
+ERROR:  While executing gem ... (Gem::CommandLineError)
+    Unknown command paperclip
+ayoseturru[~/RateFit](B[m: gem paperclip[C[C'paperclip[C[C[C[C[C[C[C[C[C'
+ERROR:  While executing gem ... (Gem::CommandLineError)
+    Unknown command paperclip
+ayoseturru[~/RateFit](B[m: [H[2Jayoseturru[~/RateFit](B[m: bundle install
+Fetching gem metadata from https://rubygems.org/...........
+Fetching version metadata from https://rubygems.org/...
+Fetching dependency metadata from https://rubygems.org/..
+Resolving dependencies...
+Using rake 10.4.2
+Using i18n 0.7.0
+Using json 1.8.3
+Using minitest 5.8.3
+Using thread_safe 0.3.5
+Using tzinfo 1.2.2
+Using activesupport 4.2.5
+Using builder 3.2.2
+Using erubis 2.7.0
+Using mini_portile 0.6.2
+Using nokogiri 1.6.6.4
+Using rails-deprecated_sanitizer 1.0.3
+Using rails-dom-testing 1.0.7
+Using loofah 2.0.3
+Using rails-html-sanitizer 1.0.2
+Using actionview 4.2.5
+Using rack 1.6.4
+Using rack-test 0.6.3
+Using actionpack 4.2.5
+Using globalid 0.3.6
+Using activejob 4.2.5
+Using mime-types 2.99
+Using mail 2.6.3
+Using actionmailer 4.2.5
+Using activemodel 4.2.5
+Using arel 6.0.3
+Using activerecord 4.2.5
+Using debug_inspector 0.0.2
+Using binding_of_caller 0.7.2
+Using bundler 1.8.4
+Using byebug 8.2.0
+[32mInstalling climate_control 0.0.3[0m
+[32mInstalling cocaine 0.5.8[0m
+Using coffee-script-source 1.10.0
+Using execjs 2.6.0
+Using coffee-script 2.4.1
+Using thor 0.19.1
+Using railties 4.2.5
+Using coffee-rails 4.1.0
+Using font-awesome-rails 4.5.0.0
+Using multi_json 1.11.2
+Using jbuilder 2.3.2
+Using jquery-rails 4.0.5
+Using jquery-ui-rails 5.0.5
+[32mInstalling mimemagic 0.3.0[0m
+[32mInstalling paperclip 4.3.2[0m
+Using sprockets 3.4.0
+Using sprockets-rails 2.3.3
+Using rails 4.2.5
+Using rdoc 4.2.0
+Using sass 3.4.19
+Using tilt 2.0.1
+Using sass-rails 5.0.4
+Using sdoc 0.4.1
+Using spring 1.4.4
+Using sqlite3 1.3.11
+Using uglifier 2.7.2
+Using web-console 2.2.1
+[32mBundle complete! 14 Gemfile dependencies, 58 gems now installed.[0m
+[32mUse `bundle show [gemname]` to see where a bundled gem is installed.[0m
+ayoseturru[~/RateFit](B[m: [H[2Jayoseturru[~/RateFit](B[m: rails g model Post title:string body:string image:attachment
+[1m[37m      invoke[0m  active_record
+[1m[32m      create[0m    db/migrate/20151228200548_create_posts.rb
+[1m[32m      create[0m    app/models/post.rb
+[1m[37m      invoke[0m    test_unit
+[1m[32m      create[0m      test/models/post_test.rb
+[1m[32m      create[0m      test/fixtures/posts.yml
+ayoseturru[~/RateFit](B[m: rails g migration AddPaperclipToPost
+[1m[37m      invoke[0m  active_record
+[1m[32m      create[0m    db/migrate/20151228200605_add_paperclip_to_post.rb
+ayoseturru[~/RateFit](B[m: rails generate controller posts
+[1m[32m      create[0m  app/controllers/posts_controller.rb
+[1m[37m      invoke[0m  erb
+[1m[32m      create[0m    app/views/posts
+[1m[37m      invoke[0m  test_unit
+[1m[32m      create[0m    test/controllers/posts_controller_test.rb
+[1m[37m      invoke[0m  helper
+[1m[32m      create[0m    app/helpers/posts_helper.rb
+[1m[37m      invoke[0m    test_unit
+[1m[37m      invoke[0m  assets
+[1m[37m      invoke[0m    coffee
+[1m[32m      create[0m      app/assets/javascripts/posts.coffee
+[1m[37m      invoke[0m    scss
+[1m[32m      create[0m      app/assets/stylesheets/posts.scss
+ayoseturru[~/RateFit](B[m: exit
+exit
+
+Script terminado (lun 28 dic 2015 20:10:47 WET
+)
