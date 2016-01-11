@@ -10,7 +10,11 @@
           <i class="fa fa-1x fa-star hidden-sm hidden-md hidden-lg"></i>
       <% end %>
       <div class="row">
-        <%= image_tag "/center_images/#{center.main_image}", alt: "Center Image", class: "col-xs-2 center_main_image img-rounded" %>
+        <% if center.center_images.count > 0 %>
+            <%= image_tag center.center_images.first.photo.url(:medium), alt: "Center Image", class: "col-xs-2 center_main_image img-rounded" %>
+        <% else %>
+            <%= image_tag "default_center.jpg", alt: "Center Image", class: "small_image", class: "col-xs-2 center_main_image img-rounded"%>
+        <% end %>
         <p class="col-xs-8"><%= center.description %></p>
       </div>
       <p><i class="fa fa-2x fa-map-marker"></i><strong> Direccion:</strong> <%= center.address %></p>
