@@ -1,0 +1,16 @@
+<div>
+  <ul id="admin_center_list" class="col-xs-12 col-sm-6 col-sm-offset-1">
+    <h3>Mis centros deportivos</h3>
+    <% @centers.each do |center| %>
+        <li>
+          <% if center.center_images.count > 0 %>
+              <%= image_tag center.center_images.first.photo.url(:thumb), alt: "Center Image" %>
+          <% else %>
+              <%= image_tag "default_center.jpg", alt: "Center Image", class: "small_image"%>
+          <% end %>
+          <%= link_to center.name, edit_center_path(id: center.id) %>
+          <i class="fa fa-pencil"></i>
+        </li>
+    <% end %>
+  </ul>
+</div>

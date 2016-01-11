@@ -377,6 +377,32 @@ img[alt="organization_logo"] {
     padding-left: 25%;
 }
 
+.small_image {
+    width: 100px;
+    height: 50px;
+}
+
+#admin_center_list {
+    list-style: none;
+    border: 3px solid #FF8C0f;
+    border-radius: 5px;
+}
+
+#admin_center_list li {
+    border: 2px solid #ffa33f;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+#admin_center_list img {
+    margin: 5px;
+    border-radius: 3px;
+}
+
+#admin_center_list a {
+    color: #FF8C0f;
+}
+
 #delete_images div {
     padding: 3px;
 }

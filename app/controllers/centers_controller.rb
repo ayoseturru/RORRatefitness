@@ -1,7 +1,7 @@
 class CentersController < ApplicationController
   before_action :set_center, only: [:show]
   before_action :authenticate, only: [:destroy, :create]
-  before_action :admin_authenticate, only: [:update, :edit, :images, :delete_images]
+  before_action :admin_authenticate, only: [:update, :edit, :images, :delete_images, :center_admin]
 
   def index
     @centers = Center.filter(params[:filter])
@@ -79,6 +79,10 @@ class CentersController < ApplicationController
         format.js { render "fail_delete_image.js.erb" }
       end
     end
+  end
+
+  def center_admin
+    @centers = current_user.centers
   end
 
   protected

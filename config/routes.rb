@@ -18,6 +18,7 @@ Rails.application.routes.draw do
       post "images"
       post "delete_images"
       get "admin"
+      get "center_admin"
     end
     resources :reviews
   end

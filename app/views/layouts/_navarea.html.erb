@@ -13,6 +13,9 @@
         <% end %>
         <% if session[:username] %>
             <li><%= link_to "Editar perfil", edit_user_path(current_user) %></li>
+            <% if current_user.role == "center_admin" %>
+                <li><%= link_to "Mis centros", center_admin_centers_path %></li>
+            <% end %>
             <li><a id="logout" href='/logout'>Salir</a></li>
         <% end %>
       </ul>

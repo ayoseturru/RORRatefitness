@@ -1,6 +1,6 @@
 <div class="container-fluid" id="custom_user_search">
   <%= form_tag users_path, method: :get do %>
-      <h5 style="color: #ffa33f"><strong>Búsqueda de entrenadores</strong></h5>
+      <h4 style="color: #ffa33f"><strong>Búsqueda de entrenadores</strong></h4>
       <div id="municipality_user" class="col-xs-10 col-lg-4">
         <label for="mun_user">Municipio</label>
         <select name="mun_user" class="form-control" id="mun_user">
@@ -20,7 +20,7 @@
 <br>
 <div class="container-fluid" id="custom_center_search">
   <h4 class="col-xs-8" style="color: #ffa33f"><strong>Búsqueda especializada</strong></h4>
-  <%= link_to "Buscar por nombre", centers_path, class: "btn btn-info", id:"name_search" %>
+  <%= link_to "Buscar por nombre", centers_path, class: "btn btn-default", id:"name_search" %>
   <%= form_tag search_filter_path do %>
       <div id="municipality" class="col-xs-10 col-lg-4">
         <label for="mun">Municipio</label>
