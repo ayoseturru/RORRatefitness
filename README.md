@@ -2,7 +2,7 @@
 A Ruby on Rails and Bootstrap app that works as TripAdvisor but for sports centers and gym.
 
 ## Getting Started
-You must ve sure rails and ruby are installed in your computer.
+You must ve sure rails and ruby are installed in your computer and have a Google Maps Api Key.
 
 ### Prerequisities
 
@@ -22,9 +22,14 @@ Stay what the step will be
 ```
 1. $ git clone https://bitbucket.org/ayoseturru/rorratefitness
 2. $ cd rorratefitness
-3. $ bundle install
-4. $ rake db:setup
-5. $ rails s
+4. Introduce your Google Maps Api Key in /app/views/center/_map.html.erb
+```
+<script src="yourKey" async defer>
+</script>
+```
+5. $ bundle install
+6. $ rake db:setup
+7. $ rails s
 
 ```
 
