@@ -23,10 +23,8 @@ Stay what the step will be
 1. $ git clone https://bitbucket.org/ayoseturru/rorratefitness
 2. $ cd rorratefitness
 4. Introduce your Google Maps Api Key in /app/views/center/_map.html.erb
-       ```
-       Code
-       More Code
-       ```
+       <script src="yourKey" async defer>
+       </script>
 5. $ bundle install
 6. $ rake db:setup
 7. $ rails s
