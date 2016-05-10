@@ -1,24 +1,40 @@
+# FitTable
+A Ruby on Rails and Bootstrap app that works as TripAdvisor but for sports centers and gym.
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+## Getting Started
+You must ve sure rails and ruby are installed in your computer.
 
+### Prerequisities
 
-Welcome to your Rails project on Cloud9 IDE!
+Requires install ImageMagick
+$ sudo apt-get install ImageMagick
 
-To get started, just do the following:
+```
+sudo gem install ImageMagick
+```
 
-1. Run the project with the "Run Project" button in the menu bar on top of the IDE.
-2. Preview your new app by clicking on the URL that appears in the Run panel below (https://ratefit-ayoseturru.c9users.io/).
+### Installing
 
-Happy coding!
-The Cloud9 IDE team
+A step by step series of examples that tell you have to get a development env running
 
+Stay what the step will be
 
-## Support & Documentation
+```
+1. $ git clone https://bitbucket.org/ayoseturru/rorratefitness
+2. $ cd rorratefitness
+3. $ bundle install
+4. $ rake db:setup
+5. $ rails s
 
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
-To watch some training videos, visit http://www.youtube.com/user/c9ide
+```
+
+## Built With
+
+* Ruby on Rails
+* Bootstrap
+* Sqlite3
+
+## Authors
+
+* **Ayose Suárez** - [Twitter Profile](https://twitter.com/AyoseTurru)
+
