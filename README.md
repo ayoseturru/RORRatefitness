@@ -26,6 +26,7 @@ Stay what the step will be
 ```
 <script src="yourKey" async defer>
 </script>
+
 ```
 5. $ bundle install
 6. $ rake db:setup
